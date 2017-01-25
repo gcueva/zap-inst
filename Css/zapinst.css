@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	padding: 20px;
+	border: 3px solid;
+}
+
+.logotipo
+{
+	padding: 0px;
+	margin: 0px;
+	background: white;
+	border-radius: 50%;
+}
+
+.logotipo-zapinst
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.search
+{
+	
+}
+
+.lista
+{
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	border: 1px solid;
+}
+
+.lista li
+{
+	margin:0px 0px 0px 15px;
+	border: 1px solid;
+	padding: 0px;
+}
+
+.lista li a , .lista li a img
+{
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.redes
+{
+	width: 40px;
+	display: flex;
+}
+
+.twitter
+{
+	width: 40px;
+	display: flex;
+	border-radius: 50%;
+	background: #1DA1F2;
+}
+
+
+
+
+
+
