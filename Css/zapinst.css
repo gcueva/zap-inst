@@ -7,17 +7,17 @@ body
 {
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Fira Sans Condensed', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
-.header
+.header-left
 {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	align-items: center;
 	color: black;
-	padding: 20px;
-	border: 3px solid;
+	border: 1px solid;
 }
 
 .logotipo
@@ -25,55 +25,86 @@ body
 	padding: 0px;
 	margin: 0px;
 	background: white;
-	border-radius: 50%;
 }
 
-.logotipo-zapinst
+.usuarios
 {
-	padding: 0px;
-	margin: 0px;
-}
-
-.search
-{
-	
-}
-
-.lista
-{
-	padding: 0px;
-	margin: 0px;
+	list-style:none;
 	display: flex;
-	align-items: center;
-	list-style: none;
-	border: 1px solid;
-}
-
-.lista li
-{
-	margin:0px 0px 0px 15px;
-	border: 1px solid;
-	padding: 0px;
-}
-
-.lista li a , .lista li a img
-{
-	margin: 0px auto;
+	justify-content: flex-end;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0px;
 	padding: 0px;
 }
 
 .redes
 {
-	width: 40px;
+	width: 20px;
 	display: flex;
+	list-style: none;
+	border: 1px solid;
+	margin: 0px;
+	padding: 0px;
 }
 
 .twitter
 {
-	width: 40px;
+	width: 20px;
 	display: flex;
 	border-radius: 50%;
 	background: #1DA1F2;
+}
+
+
+@media screen and (max-width:500px)
+{
+	body
+	{
+		border: 5px solid black;
+	}
+	
+	/*header*/
+	.header
+	{
+		padding: 10px;
+	}
+
+	
+	.logotipo
+	{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+	}
+	
+	.logotipo img
+	{
+		width: 50px;
+		height: 50px;
+		margin:0px;
+	}
+	
+	.header h1
+	{
+		font-size: 11px;
+		text-transform: uppercase;
+		margin:0px 0px 0px 10px;
+	}
+	
+	.search
+	{
+		display: none;
+	}
+	
+	.usuarios li
+	{
+		font-size: 11px;
+		margin-left: 10px;
+	}
+	
+	/*header*/
+	
 }
 
 
