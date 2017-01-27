@@ -3,11 +3,12 @@
 
 
 
-body
+body, html
 {
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Lato', sans-serif;
+	width: auto;
 }
 
 .header-left
@@ -17,7 +18,25 @@ body
 	justify-content: space-around;
 	align-items: center;
 	color: black;
-	border: 1px solid;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+}
+
+.header-left h1 a
+	{
+		text-decoration: none;
+		color: black;
+		font-size: 10px;
+	}
+.header-left a:hover
+{
+	
+}
+
+.header-left h1:hover, .header-left ol li:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .logotipo
@@ -27,47 +46,62 @@ body
 	background: white;
 }
 
+.logotipo a
+{
+	padding: 0px;
+	margin: 0px;
+}
+
 .usuarios
 {
 	list-style:none;
 	display: flex;
 	justify-content: flex-end;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight:600;
 	margin: 0px;
 	padding: 0px;
 }
 
 .redes
 {
-	width: 20px;
-	display: flex;
 	list-style: none;
-	border: 1px solid;
 	margin: 0px;
 	padding: 0px;
 }
 
-.twitter
+.redes li img
 {
-	width: 20px;
-	display: flex;
-	border-radius: 50%;
-	background: #1DA1F2;
+	width: 25px;
+	padding: 0px;
+	margin: 0px 10px 0px 0px;
 }
 
 
 @media screen and (max-width:500px)
 {
-	body
-	{
-		border: 5px solid black;
-	}
 	
 	/*header*/
 	.header
 	{
 		padding: 10px;
+		border-bottom: 2px solid;
+	}
+	
+	.header h1
+	{
+		margin:0px 0px 0px 10px;
+		font-weight: 600;
+		font-size: 10px;
+
+	}
+	
+	.header-left h1 a
+	{
+		text-decoration: none;
+		color: black;
+		font-size: 10px;
+
 	}
 
 	
@@ -83,27 +117,214 @@ body
 		width: 50px;
 		height: 50px;
 		margin:0px;
-	}
-	
-	.header h1
-	{
-		font-size: 11px;
-		text-transform: uppercase;
-		margin:0px 0px 0px 10px;
-	}
-	
-	.search
-	{
-		display: none;
-	}
-	
+	}	
 	.usuarios li
 	{
-		font-size: 11px;
+		font-size: 10px;
 		margin-left: 10px;
 	}
+
+	.redes
+	{
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 20px;
+	}
+
+	.redes li img
+	{
+		width: 25px;
+		padding: 0px;
+		margin: 0px 10px 0px 0px;
+	}
+	
+	/*search*/
+	.search
+	{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		padding: 10px;
+		align-items: center;
+		position: absolute;
+		right: 0px;
+		left: 0px;
+		top: -100%;
+		z-index: 2;
+		background: white;
+		transition: linear 0s;
+	}
+	
+	.activar-search
+	{
+		top:0px;
+	}
+	
+	.buscador
+	{
+		height: 25px;
+		display: flex;
+	}
+	
+	.search h1
+	{
+		padding: 0px;
+		margin: 0px;
+		letter-spacing: 1.5px;
+	}
+	.search-cuadro
+	{
+		width:200px;
+		height: 30px;
+		padding: 0px 10px;
+		margin: 0px;
+		border-radius: 3px;
+		border: 1px solid;
+	}
+	
+	.search-submit
+	{
+		width: 25px;
+		height: 25px;
+		font-size: 0em;
+		padding: 0px;
+		margin: 0px;
+		background: url(../Imágenes/search.png);
+		background-size: cover;
+		border: none;
+		cursor: pointer;
+	}
+	/*search*/
 	
 	/*header*/
+	
+	/*login*/
+	.contenedor-login
+	{
+		text-align: center;
+		height: 800px;
+		width: auto;
+		z-index: 2;
+		position: absolute;
+		top:-1000px;
+		left:0px;
+		right: 0px;
+		transition:linear .3s;
+		background: rgba(194,194,194,0.7);
+		padding: 15px;	
+	}
+	
+	.activar-login
+	{
+		top:0px;
+	}
+	
+	.login
+	{
+		border: 1px solid gray;
+		border-radius: 5px;
+		background-color: white;
+		opacity: 1;
+		padding: 20px 35px
+	}
+	
+	.close-login
+	{
+		width: 100%;
+		display: block;
+		text-align: right;
+	}
+	
+	.close-login img:hover
+	{
+		cursor: pointer;
+	}
+	
+	.login h1
+	{
+		border-top: 1px solid lightgray;
+		padding: 30px 0px 20px 0px;
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 3px;
+	}
+	
+	.login label, .login input
+	{
+		display: block;
+		text-align: left;	
+	}
+	
+	.login label
+	{
+		font-size: 14px;
+		letter-spacing: 1px;
+		margin-bottom: 5px;
+	}
+	
+	.email, .password
+	{
+		width: auto;
+
+	}
+	
+	.login input
+	{
+		width: 92%;
+		max-width: 500px;
+		height: 35px;
+		border-radius: 2px;
+		border: 1px solid gray;
+		margin-bottom: 30px ;
+		padding: 0px 10px;
+	}
+	
+	
+	input:focus
+	{
+		background-color: rgba(244,247,163,1.00);
+		outline: 0;
+	}
+	
+	.login button
+	{
+		width: 200px;
+		height: 50px;
+		background: black;
+		color: white;
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: bold;
+		letter-spacing: 2px;
+		border: none;
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+	
+	.login button:hover
+	{
+		background: white;
+		color: black;
+		border: 1px solid black;
+		cursor: pointer;
+	}
+	
+	.login h3
+	{
+		font-size: 12px;
+		font-weight: 100;
+		text-decoration: underline;
+	}
+	
+	.login h3:hover
+	{
+		cursor: pointer;
+		color: gray;
+	}
+	
+	
+	/*login*/
 	
 }
 

@@ -31,28 +31,68 @@ font-family: 'Lato', sans-serif;-->
 	<header class="header"> 
 	    <div class="header-left">     
 			<figure class="logotipo">
-				<img src="Imágenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/>
+				<a href="index.html"><img src="Imágenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/></a>
 			</figure>
-			<h1>ZapInst</h1>
-			<h1>Buscar</h1>
-			<div class="search">
+			<h1><a href="index.html">ZapInst</a></h1>
+			<h1 id="buscar">Buscar</h1>
+			<div class="search" id="search">
+				<figure class="logotipo">
+				<a href="index.html"><img src="Imágenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/></a>
+				</figure>
+				<div class="buscador">
 				<input type="search" class="search-cuadro" placeholder="Buscar..."/>
-				<input type="submit" value="Buscar" class="search-submit" /> 
+				<input type="submit" value="Buscar" class="search-submit" />
+				</div>
+				<h1 id="quitar">Cancelar</h1>
 			</div>
-		</div>
 			<ol class="usuarios">
-				<li>Iniciar Sesión</li>
-				<li>Unirte</li>
+				<li id="login">Iniciar Sesión</li>
+				<li>Únete</li>
 			</ol>
+		</div>
 		<div class="header-right">
 			<ol class="redes">
-				<li><a><img src="Imágenes/fb.png" alt="facebook" class="redes"/></a></li>
-				<li><a><img src="Imágenes/twitter.png" alt="twitter" class="twitter"/></a></li>
-				<li><a><img src="Imágenes/snapchat.png" alt="snapchat" class="redes"/></a></li>
-				<li><a><img src="Imágenes/Instagram.png" alt="instagram" class="redes"/></a></li>
+				<li><a><img src="Imágenes/facebook-icon.png" alt="facebook"/></a></li>
+				<li><a><img src="Imágenes/twit_logo.png" alt="twitter"/></a></li>
+				<li><a><img src="Imágenes/SnapChat_Rounded_icon-icons.com_61574.png" alt="snapchat"/></a></li>
+				<li><a><img src="Imágenes/Instagram-PNG-File.png" alt="instagram"/></a></li>
+				<li><a><img src="Imágenes/Pinterest+Icon.png" alt="pinterest"/></a></li>
 			</ol>
 		</div>
 	</header>
+	<div id="contenedor-login" class="contenedor-login">
+		<div class="login">
+			<span class="close-login"><img src="Imágenes/close.png" alt="close" width="20px" id="quit-login"/></span>
+			<h1>Bienvenido</h1>
+			<div class="email">
+			<label for="email">Correo electrónico o nombe de usuario</label>
+			<input type="email" required="asdasd@asdas.com" placeholder="Correo Electrónico" id="email" name="email"/>
+			</div>
+			<div class="password">
+			<label for="password">Contraseña</label>
+			<input type="password" placeholder="Contraseña" id="password" name="password"/>
+			</div>
+			<button>Iniciar Sesión</button>
+			<h3>¿Olvidaste tu contraseña?</h3>
+		</div>
+	</div>
+	<div id="contenedor-unete">
+		<div class="unete">
+			<h2>Únete</h2>
+			<h3>Escoge cómo quieres ser parte</h3>
+			<div>
+				<div class="user-buyer">
+					<h2>Cliente</h2>
+					<h3>Busca los mejores modelos de las mejores marcas con sello de originalidad.</h3>
+				</div>
+				<div class="user-wholesaler">
+				</div>
+				<div class="user-seller">
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<nav>           Menu
 	</nav>
 	<aside>         Banner
@@ -61,5 +101,44 @@ font-family: 'Lato', sans-serif;-->
 	</section>
 	<footer>        Datos, Contacto ,terminos y contrato, devoluciones, garantia de privacidad , soporte , preguntas
 	</footer>
+	
+	<script>
+		var buscadorOn = document.getElementById("buscar");
+		var search = document.getElementById("search");
+		buscadorOn.addEventListener("mouseup",buscarActivar);
+		var buscadorOff = document.getElementById("quitar");
+		buscadorOff.addEventListener("mouseup",buscarQuit);
+									 
+		function buscarActivar()
+		{
+			search.classList.add('activar-search');
+		}
+		
+		function buscarQuit()
+		{
+			search.classList.remove('activar-search');
+		}
+		
+		
+		var loginOn = document.getElementById("login");
+		var login= document.getElementById("contenedor-login");
+		loginOn.addEventListener("mouseup",loginActivar);
+		var loginOff = document.getElementById("quit-login");
+		loginOff.addEventListener("mouseup",loginQuit);
+									 
+		function loginActivar()
+		{
+			login.classList.add('activar-login');
+		}
+		
+		function loginQuit()
+		{
+			login.classList.remove('activar-login');
+			console.log("asd");
+		}
+		
+	</script>
+	
+	
 </body>
 </html>
