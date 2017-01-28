@@ -9,6 +9,7 @@
 <link href="Css/zapinst.css" type="text/css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Allerta|Droid+Sans|Fira+Sans+Condensed|Gloria+Hallelujah|Kaushan+Script|Lobster|Montserrat|Pacifico" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Lato|Marck+Script|Playball|Shadows+Into+Light+Two" rel="stylesheet">
+<meta name="viewport" content="width-device-width, initial-scale=1"/>
 <!--font-family: 'Allerta', sans-serif;
 font-family: 'Droid Sans', sans-serif;
 font-family: 'Gloria Hallelujah', cursive;
@@ -47,7 +48,7 @@ font-family: 'Lato', sans-serif;-->
 			</div>
 			<ol class="usuarios">
 				<li id="login">Iniciar Sesión</li>
-				<li>Únete</li>
+				<li id="users">Únete</li>
 			</ol>
 		</div>
 		<div class="header-right">
@@ -72,26 +73,39 @@ font-family: 'Lato', sans-serif;-->
 			<label for="password">Contraseña</label>
 			<input type="password" placeholder="Contraseña" id="password" name="password"/>
 			</div>
-			<button>Iniciar Sesión</button>
+			<button class="button">Iniciar Sesión</button>
 			<h3>¿Olvidaste tu contraseña?</h3>
 		</div>
 	</div>
-	<div id="contenedor-unete">
+	<div id="contenedor-unete" class="contenedor-unete">
 		<div class="unete">
-			<h2>Únete</h2>
+			<span class="close-login"><img src="Imágenes/close.png" alt="close" width="20px" id="quit-unete"/></span>
+			<h2 class="title-unete">Únete</h2>
 			<h3>Escoge cómo quieres ser parte</h3>
-			<div>
+			<div class="users-cuadros">
 				<div class="user-buyer">
-					<h2>Cliente</h2>
-					<h3>Busca los mejores modelos de las mejores marcas con sello de originalidad.</h3>
+					<a href="register-user-buyer.html"><figure>
+						<img src="Imágenes/shopping-bag.png" alt="Cliente"/>
+					</figure></a>
+					<h2><a href="register-user-buyer.html">Cliente</a></h2>
+					<h3><a href="register-user-buyer.html">Busca los mejores modelos de las mejores marcas con sello de originalidad.</a></h3>
+					<a href="register-user-buyer.html"><button class="button">Registrarme</button></a>
 				</div>
 				<div class="user-wholesaler">
-					<h2>Cliente Mayorista</h2>
-					<h3>Busca los mejores modelos de las mejores marcas y con los mejores precios para tus clientes.</h3>
+					<a href="register-user-wholesaler.html"><figure>
+					<img src="Imágenes/carro-de-la-compra.jpg" alt="Cliente Mayorista"/>
+					</figure></a>
+					<h2><a href="register-user-wholesaler.html">Cliente Mayorista</a></h2>
+					<h3><a href="register-user-wholesaler.html">Busca los mejores modelos de las mejores marcas y con los mejores precios para tus clientes.</a></h3>
+					<a href="register-user-wholesaler.html"><button class="button">Registrarme</button></a>
 				</div>
 				<div class="user-seller">
-					<h2>Socio</h2>
-					<h3>Crea tu tienda virtual dentro plataforma, y relacionate con clientes a nivel nacional con las herramientas que necesitas.</h3>
+					<a href="register-user-seller.html"><figure>
+					<img src="Imágenes/tiendas-virtuales (1).png" alt="Socios"/>
+					</figure></a>
+					<h2><a href="register-user-seller.html">Socio</a></h2>
+					<h3><a href="register-user-buyer.html">Crea tu tienda virtual dentro plataforma, y relacionate con clientes a nivel nacional con las herramientas que necesitas.</a></h3>
+					<a href="register-user-buyer.html"><button class="button">Registrarme</button></a>
 				</div>
 			</div>
 		</div>
@@ -121,8 +135,7 @@ font-family: 'Lato', sans-serif;-->
 		function buscarQuit()
 		{
 			search.classList.remove('activar-search');
-		}
-		
+		}	
 		
 		var loginOn = document.getElementById("login");
 		var login= document.getElementById("contenedor-login");
@@ -138,7 +151,22 @@ font-family: 'Lato', sans-serif;-->
 		function loginQuit()
 		{
 			login.classList.remove('activar-login');
-			console.log("asd");
+		}
+		
+		var userOn = document.getElementById("users");
+		var users= document.getElementById("contenedor-unete");
+		userOn.addEventListener("mouseup",userActivar);
+		var userOff = document.getElementById("quit-unete");
+		userOff.addEventListener("mouseup",userQuit);
+									 
+		function userActivar()
+		{
+			users.classList.add('activar-unete');
+		}
+		
+		function userQuit()
+		{
+			users.classList.remove('activar-unete');
 		}
 		
 	</script>

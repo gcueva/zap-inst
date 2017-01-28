@@ -1,14 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
-body, html
+html
 {
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	padding: 10px;
+	margin: 0px auto;
 	font-family: 'Lato', sans-serif;
-	width: auto;
+}
+
+.contenido
+{
+	width: 800px;
+	margin: auto;
 }
 
 .header-left
@@ -84,7 +93,6 @@ body, html
 	/*header*/
 	.header
 	{
-		padding: 10px;
 		border-bottom: 2px solid;
 	}
 	
@@ -101,7 +109,6 @@ body, html
 		text-decoration: none;
 		color: black;
 		font-size: 10px;
-
 	}
 
 	
@@ -135,13 +142,13 @@ body, html
 	{
 		width: 25px;
 		padding: 0px;
-		margin: 0px 10px 0px 0px;
+		margin: 0px 10px 10px 0px;
 	}
 	
 	/*search*/
 	.search
 	{
-		width: 100%;
+		width: auto;
 		display: flex;
 		justify-content: space-around;
 		padding: 10px;
@@ -169,12 +176,12 @@ body, html
 	.search h1
 	{
 		padding: 0px;
-		margin: 0px;
+		margin-left: 0px;
 		letter-spacing: 1.5px;
 	}
 	.search-cuadro
 	{
-		width:200px;
+		width:190px;
 		height: 30px;
 		padding: 0px 10px;
 		margin: 0px;
@@ -202,8 +209,8 @@ body, html
 	.contenedor-login
 	{
 		text-align: center;
-		height: 800px;
 		width: auto;
+		height: 100%;
 		z-index: 2;
 		position: absolute;
 		top:-1000px;
@@ -286,7 +293,7 @@ body, html
 		outline: 0;
 	}
 	
-	.login button
+	.button
 	{
 		width: 200px;
 		height: 50px;
@@ -302,7 +309,7 @@ body, html
 		margin-bottom: 25px;
 	}
 	
-	.login button:hover
+	.button:hover
 	{
 		background: white;
 		color: black;
@@ -323,8 +330,117 @@ body, html
 		color: gray;
 	}
 	
-	
 	/*login*/
+
+	/*users*/
+	.contenedor-unete
+	{
+		max-width: 500px;
+		width: auto;
+		position: absolute;
+		top:0px;
+		left:-600px;
+		right: 0px;
+		z-index: 4;
+		background: rgba(194,194,194,0.7);		
+		text-align: center;
+		padding: 15px;
+		opacity: 1;
+		transition:linear .3s;
+	}
+	
+	.activar-unete
+	{
+		left: 10px;
+	}
+	
+	.unete
+	{
+		border: 1px solid gray;
+		border-radius: 5px;
+		background-color: white;
+		opacity: 1;
+		width: auto;
+		padding: 20px;
+	}
+	
+	h2.title-unete
+	{
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 2px;
+		margin: 5px;
+		border-top: 1px solid gray;
+		padding-top: 20px;
+		margin-top: 10px;
+	}
+	
+	.users-cuadros h2
+	{
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 2px;
+		margin: 5px;
+	}
+	
+	.users-cuadros a
+	{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.users-cuadros a:hover
+	{
+		text-decoration: underline;
+	}
+	
+	.unete h3
+	{
+		font-size: 12px;
+		margin: 5px;
+	}
+	
+	.user-buyer, .user-wholesaler, .user-seller
+	{
+		border: 1px solid lightgray;
+		border-radius: 5px;
+		margin: 15px 5px;
+		padding: 10px;
+		
+	}
+	
+	.user-buyer:hover , .user-wholesaler:hover , .user-seller:hover, .unete figure:hover
+	{
+		border: 1px solid #3DD7D5;
+	}
+	
+	.unete figure
+	{
+		width: 180px;
+		height: 180px;
+		border: 1px solid gray;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: white;
+		padding: 0px;
+		margin: 10px auto;
+	}
+	
+	.user-buyer img, .user-wholesaler img
+	{
+		width: 100px;
+		height: 100px;
+	}
+	
+	.user-seller img
+	{
+		width: 170px;
+		height: 110px;
+		border-radius: 40px;
+	}
+	/*users*/
 	
 }
 
