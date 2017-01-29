@@ -9,17 +9,15 @@ html
 
 body
 {
-	padding: 10px;
 	margin: 0px auto;
 	font-family: 'Lato', sans-serif;
 }
 
 .contenido
 {
-	width: 800px;
-	margin: auto;
+	padding: 10px 10px 0px 10px;
 }
-
+/*header*/
 .header-left
 {
 	display: flex;
@@ -32,14 +30,14 @@ body
 }
 
 .header-left h1 a
-	{
+{
 		text-decoration: none;
 		color: black;
 		font-size: 10px;
-	}
+}
+
 .header-left a:hover
-{
-	
+{	
 }
 
 .header-left h1:hover, .header-left ol li:hover
@@ -85,7 +83,112 @@ body
 	padding: 0px;
 	margin: 0px 10px 0px 0px;
 }
+/*header*/
 
+/*body-sneakers*/
+.body-sneakers
+{
+	padding: 10px;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap: wrap;
+	text-align: center;
+	background: #F1F1F1;
+}
+
+.body-sneakers a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.sneakers
+{
+	padding: 20px 30px;
+	width: 115px;
+	height: 310px ;
+	background: white;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	border-radius: 2px;
+	overflow: hidden;
+	position: relative;
+}
+
+.sneakers:hover
+{
+	border: 0.5px solid gray;
+}
+
+.sneakers:hover .sneakers-price
+{
+	opacity: 0;
+}
+
+.sneakers:hover .sneakers-tallas
+{
+	bottom: 25px;
+}
+
+.sneakers figure
+{
+	padding: 0px;
+	margin: 40px 0px;
+}
+
+.sneakers img
+{
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+.sneakers-name
+{
+	font-size: 15px;
+	letter-spacing: 2px;
+	margin-bottom:40px;
+	
+}
+
+.sneakers-price
+{
+	font-weight: 100;
+	font-size: 13px;
+	margin: 20px 0px;
+}
+
+.sneakers-tallas
+{
+	font-weight: 100;
+	letter-spacing: 1.5px;
+}
+/*body-sneakers*/
+
+/*footer*/
+#footer
+{
+	background: black;
+	padding: 10px;
+}
+
+.footer h2 a
+{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font: inherit;
+	line-height: normal;
+}
+
+.footer h2 a:hover
+{
+	text-decoration: underline;
+}
+/*footer*/
 
 @media screen and (max-width:500px)
 {
@@ -351,7 +454,7 @@ body
 	
 	.activar-unete
 	{
-		left: 10px;
+		left: 0px;
 	}
 	
 	.unete
@@ -441,6 +544,49 @@ body
 		border-radius: 40px;
 	}
 	/*users*/
+	
+	/*sneakers-body*/
+	.sneakers-name
+	{
+		font-size: 10px;
+		letter-spacing: 2px;
+		margin-bottom:40px;
+
+	}
+	.senakers img
+	{
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.sneakers-tallas
+	{
+		font-weight: 100;
+		font-size: 13px;
+		width: 110px;
+		position: absolute;
+		bottom:-50px;
+		letter-spacing: 1.5px;
+	}
+	/*sneakers-body*/
+	
+	/*footer*/
+	.footer
+	{
+		padding: 30px	
+	}
+	
+	.footer h2
+	{
+		margin: 0px 0px 15px 0px;
+	}
+	
+	.footer h2 a
+	{
+		font-size: 10px;
+		letter-spacing: 2.2px;
+	}
+	/*footer*/
 	
 }
 
