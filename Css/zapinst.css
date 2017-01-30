@@ -95,21 +95,26 @@ body
 	flex-wrap: wrap;
 	text-align: center;
 	background: #F1F1F1;
+	margin: 0px;
 }
 
 .body-sneakers a
 {
+	display:block;
+	margin-bottom: 10px;
 	text-decoration: none;
 	color: black;
+	padding: 0px;
+	max-width: 155px;
+	height:350px;
 }
 
 .sneakers
 {
 	padding: 20px 30px;
-	width: 115px;
-	height: 310px ;
+	width: auto;
+	height: 310px;
 	background: white;
-	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content:space-between;
