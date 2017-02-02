@@ -16,8 +16,9 @@ body
 
 .contenido
 {
-	width: 900px;
+	width: 1000px;
 	margin: auto;
+	padding: 10px 0px;
 }
 
 /*header*/
@@ -124,8 +125,14 @@ body
 
 .usuarios li
 {
-	font-size: 13px;
+	font-size: 12px;
 	margin-left: 10px;
+}
+
+.usuarios a
+{
+	text-decoration: none;
+	color: black;
 }
 
 .redes
@@ -142,6 +149,7 @@ body
 	width: 30px;
 	padding-left: 10px;
 }
+
 /*search*/
 #logo-search, #buscar, #quitar
 {
@@ -278,21 +286,20 @@ input:focus
 /*users*/
 .contenedor-unete
 {
-	width: 900px;
-	top:0px;
+	width: 1000px;
 	margin: auto;
 	background: rgba(194,194,194,0.7);		
 	text-align: center;
+	border: 1px solid gray;
 }
 
 .unete
 {
-	border: 1px solid gray;
 	border-radius: 5px;
 	background-color: white;
 	opacity: 1;
 	width: auto;
-	padding: 10px;
+	padding: 10px 0px;
 }
 
 #quit-unete
@@ -305,6 +312,7 @@ h2.title-unete
 	text-transform: uppercase;
 	font-size: 20px;
 	letter-spacing: 2px;
+	margin-top: 0px;
 	margin-bottom: 5px;
 }
 
@@ -349,7 +357,6 @@ h2.title-unete
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 }
 
 .user-buyer:hover , .user-wholesaler:hover , .user-seller:hover, .unete figure:hover
@@ -387,16 +394,94 @@ h2.title-unete
 
 /*header*/
 
+/*Banner*/
+.conteiner-banner
+{
+	margin: 0px;
+	position: relative;
+	border-bottom: 2px solid black;
+	background: rgba(0,0,0,0.20)
+}
+
+.banner
+{
+	width: 1000px;
+	margin: auto;
+	padding: 0px;
+}
+
+.list-banner
+{
+	width: 1000px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+	transition: .3s linear;
+}
+
+.banner1
+{
+	max-width: 1000px;
+	width: 100%;
+	height: 245px;
+	background-image:url(../imagenes/../imagenes/adidas-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.controles
+{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	left: 0px;
+	width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.previous, .next
+{
+	height: 245px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,0.60);
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	margin: 0px;
+	padding: 0px;
+}
+
+a.previous:active ul
+{
+	transform: translate(-950px,0px);
+}
+
+/*banner*/
+
 /*body-sneakers*/
 #body-sneakers
 {
-	background:rgba(241, 241, 241, 0.7);
+	background:rgba(241, 241, 241, 0.4);
+}
+
+.contenedor-sneakers
+{
+	width: 1100px;
+	margin: auto;
 }
 
 .body-sneakers
 {
 	width: 900px;
-	padding: 10px;
+	padding: 70px 0px 50px 0px;
 	display: flex;
 	justify-content:space-around;
 	align-items:center;
@@ -431,7 +516,7 @@ h2.title-unete
 
 .sneakers:hover
 {
-	border: 0.5px solid gray;
+	border: 0.5px solid black;
 }
 
 .sneakers:hover .sneakers-price
@@ -485,6 +570,42 @@ h2.title-unete
 
 /*body-sneakers*/
 
+/*value-proposition*/
+.value-proposition
+{
+	width: 900px;
+	margin: auto;
+	display: flex;
+	flex-wrap:wrap;
+	height: auto;
+	border: 1px solid ;
+}
+
+.proposition
+{
+	width: 155px;
+	border: 1px solid lightgray;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.proposition h1
+{
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 2px;
+	border: 1px solid lightgray;
+	padding: 0px;
+	margin-top: 10px;
+}
+
+.proposition p
+{
+	font-size: 13.5px;
+}
+/*value-proposition*/
+
 /*footer*/
 #footer
 {
@@ -493,7 +614,7 @@ h2.title-unete
 
 .footer
 {
-	padding: 30px 0px;
+	padding: 20px 0px;
 	width: 900px;
 	margin: auto;
 	display: flex;
@@ -502,7 +623,7 @@ h2.title-unete
 
 .footer h2
 {
-	margin: 0px 0px 15px 0px;
+	margin: 0px 0px 10px 0px;
 }
 
 .footer h2 a
@@ -524,14 +645,8 @@ h2.title-unete
 
 
 
-@media screen and (max-width:920px)
+@media screen and (max-width:940px)
 {
-	.contenido
-	{
-		width: auto;
-		padding: 10px;
-	}
-	
 	.contenedor-unete
 	{
 		width: auto;	
@@ -542,16 +657,41 @@ h2.title-unete
 		width: auto;
 	}
 	
-	.body-sneakers
+	.contenedor-sneakers, .body-sneakers, .sneakers
 	{
 		width: auto;
 		height: auto;
 	}
+	.contenido
+	{
+		width: auto;
+		padding: 10px;
+	}
 	
-	.sneakers
+	/*banner*/
+	
+	.conteiner-banner
+	{
+		width: auto;
+		padding: 0px 10px;
+	}
+	
+	.banner
 	{
 		width: auto;
 	}
+
+	.list-banner
+	{
+		width: auto;
+	}
+
+	.controles
+	{
+		width: auto;
+		padding:0px 10px;
+	}
+	/**/
 }
 
 @media screen and (max-width:810px)
@@ -694,6 +834,11 @@ h2.title-unete
 		padding: 15px;
 		opacity: 0;
 		transition: .2s;
+	}
+	
+	.unete
+	{
+		border: 1px solid gray;
 	}
 	
 	.activar-unete
