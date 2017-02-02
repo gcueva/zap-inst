@@ -839,6 +839,7 @@ a.previous:active ul
 	.unete
 	{
 		border: 1px solid gray;
+		padding: 15px;
 	}
 	
 	.activar-unete
