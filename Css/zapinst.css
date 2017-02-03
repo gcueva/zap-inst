@@ -1,5 +1,65 @@
 @charset "utf-8";
 /* CSS Document */
+/*iconos*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?pkcf0d');
+  src:  url('../fonts/icomoon.eot?pkcf0d#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pkcf0d') format('truetype'),
+    url('../fonts/icomoon.woff?pkcf0d') format('woff'),
+    url('../fonts/icomoon.svg?pkcf0d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+  content: "\e902";
+}
+.icon-price:before {
+  content: "\e935";
+}
+.icon-price-seller:before {
+  content: "\e936";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.icon-truck:before {
+  content: "\e9b0";
+}
+.icon-power:before {
+  content: "\e9b5";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+/*iconos*/
+
 
 html
 {
@@ -36,7 +96,6 @@ body
 	margin: 0px;
 	background: white;
 }
-
 	
 .logotipo img
 {
@@ -165,7 +224,7 @@ body
 	height: 100%;
 	z-index: 2;
 	position: fixed;
-	top:-1000px;
+	top:-120%;
 	left:0px;
 	right: 0px;
 	transition:linear .3s;
@@ -444,6 +503,7 @@ h2.title-unete
 	display: flex;
 	justify-content: space-between;
 }
+
 .previous, .next
 {
 	height: 245px;
@@ -466,21 +526,33 @@ a.previous:active ul
 
 /*banner*/
 
+/*nav = filters*/
+.contenedor-filters
+{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	padding: 0px;
+}
+/*nav = filters*/
+
 /*body-sneakers*/
 #body-sneakers
 {
 	background:rgba(241, 241, 241, 0.4);
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
 }
 
 .contenedor-sneakers
 {
-	width: 1100px;
+	width: 1000px;
 	margin: auto;
 }
 
 .body-sneakers
 {
-	width: 900px;
+	width: 1000px;
 	padding: 70px 0px 50px 0px;
 	display: flex;
 	justify-content:space-around;
@@ -573,12 +645,13 @@ a.previous:active ul
 /*value-proposition*/
 .value-proposition
 {
-	width: 900px;
+	width: 1000px;
 	margin: auto;
 	display: flex;
+	justify-content: space-around;
 	flex-wrap:wrap;
 	height: auto;
-	border: 1px solid ;
+	padding: 30px 0px;
 }
 
 .proposition
@@ -590,12 +663,27 @@ a.previous:active ul
 	border-radius: 5px;
 }
 
+.proposition:hover
+{
+	border: 1px solid #3DD7D5;
+}
+
+.proposition:hover span
+{
+	font-size: 28px;
+	color: #3DD7D5;
+}
+
+.icon-home, .icon-price, .icon-price-seller, .icon-clock, .icon-truck
+{
+	font-size: 25px;
+}
+
 .proposition h1
 {
 	text-transform: uppercase;
 	font-size: 15px;
 	letter-spacing: 2px;
-	border: 1px solid lightgray;
 	padding: 0px;
 	margin-top: 10px;
 }
@@ -604,7 +692,56 @@ a.previous:active ul
 {
 	font-size: 13.5px;
 }
+
+.proposition p a
+{
+	color: black;
+	font-weight: bold;
+}
 /*value-proposition*/
+
+/*tutorials*/
+#contenedor-tutorials
+{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	display: flex;
+}
+
+.tutorials
+{
+	padding: 15px;
+	width: 330px;
+}
+
+.tutorials h1
+{
+	font-size: 14.5px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	padding: 0px;
+	margin: 10px 0px 20px; 
+}
+
+.tutorials-video
+{
+	position: relative;
+	padding-top: 56.25%;
+}
+.video
+{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+}
+/*tutorials*/
+
+
 
 /*footer*/
 #footer
