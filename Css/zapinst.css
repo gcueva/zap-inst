@@ -519,21 +519,137 @@ h2.title-unete
 	padding: 0px;
 }
 
-a.previous:active ul
+/*banner*/
+/*description*/
+.contenedor-description
 {
-	transform: translate(-950px,0px);
+	width: 1000px;
+	margin: 20px auto;
+	text-align: center;	
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
-/*banner*/
+.title-description
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	margin: 30px 10px 10px;
+	border-bottom: 0.5px solid lightgray;
+}
+
+.logotipo-title-description
+{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	padding: 0px;
+	margin: 0px;
+	background: white;
+}
+
+.logotipo-title-description img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.title-description h1
+{
+	text-transform: uppercase;
+	margin-left: 15px;
+	font-size: 25px;
+	letter-spacing: 2.5px;
+}
+
+.contenedor-description h2
+{
+	font-size: 16px;
+	margin: 0px 10px;
+	padding-bottom: 10px;
+	border-bottom: 0.5px solid lightgray;
+}
+
+.contenedor-description p
+{
+	font-size: 14px;
+	margin:10px;
+	padding: 10px 0px 20px 0px;
+	border-bottom: 0.5px solid lightgray;
+}
+
+.contenedor-description p span
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color:#3DD7D5;
+}
+
+.description-brand
+{
+	padding: 20px;
+}
+
+.description-brand h2
+{
+	font-size: 18px;
+	width: 220px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-align: left;
+	border-bottom: 3px solid black;
+	margin: 0px 50px;
+	padding: 0px;
+}
+
+.conteiner-brand
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.brand
+{
+	height: auto;
+	max-width: 140px;;
+	padding: 0px;
+	margin: 20px;
+}
+
+.brand img
+{
+	max-width: 140px;
+	height: auto;
+}	
+/*description*/
 
 /*nav = filters*/
+#filters
+{
+}
+
 .contenedor-filters
 {
 	width: 1000px;
-	margin: auto;
+	margin: 0px auto;
 	text-align: center;
 	padding: 0px;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
+
+.contenedor-filters button
+{
+}
+
 /*nav = filters*/
 
 /*body-sneakers*/
@@ -729,6 +845,7 @@ a.previous:active ul
 	position: relative;
 	padding-top: 56.25%;
 }
+
 .video
 {
 	position: absolute;
@@ -740,8 +857,6 @@ a.previous:active ul
 	height: 100%;
 }
 /*tutorials*/
-
-
 
 /*footer*/
 #footer
