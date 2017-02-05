@@ -691,15 +691,12 @@ h2.title-unete
 .sneakers
 {
 	padding: 20px 30px;
-	background: white;
-	display: flex;
-	flex-direction: column;
-	justify-content:space-between;
-	align-items: baseline;
 	border-radius: 2px;
 	overflow: hidden;
 	position: relative;
-	height: 390px;
+	height: 370px;
+	background: white;
+	
 }
 
 .sneakers:hover
@@ -725,8 +722,7 @@ h2.title-unete
 
 .sneakers img
 {
-	max-width: 70%;
-	vertical-align: middle;
+	width: 70%;
 }
 
 .sneakers-name
