@@ -854,6 +854,113 @@ h2.title-unete
 }
 /*tutorials*/
 
+/*oferts*/
+.conteiner-oferts
+{
+	background: black;
+}
+
+.oferts
+{
+	color:white;
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.oferts h1
+{
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.oferts button
+{
+	background: white;
+	color: black;
+}
+
+.oferts button:Hover
+{
+	background: #3DD7D5;
+	color: white;
+}
+
+/*oferts*/
+
+/*contact*/
+.conteiner-contact
+{
+	width: 1000px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.conteiner-contact h2
+{
+	text-transform: uppercase;
+	font-size: 17px;
+	letter-spacing: 2px;
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+}
+
+.conteiner-contact li, .conteiner-contact ol
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.conteiner-contact li a, .conteiner-contact li
+{
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	margin: 3px 0px;
+}
+
+.conteiner-contact li a:hover
+{
+	text-decoration: underline;
+}
+
+.zapinst, .customer-support, .contact, .social-media
+{
+	width: 21%;
+	padding: 20px;
+	border-right: 0.5px solid lightgray;
+}
+
+.zapinst
+{
+	border-left: 0.5px solid lightgray;
+}
+
+.social-redes
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.social-redes li img
+{
+	width: 40px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+/*contact*/
+
 /*footer*/
 #footer
 {
@@ -890,8 +997,6 @@ h2.title-unete
 	text-decoration: underline;
 }
 /*footer*/
-
-
 
 @media screen and (max-width:940px)
 {
