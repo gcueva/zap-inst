@@ -33,7 +33,7 @@ font-family: 'Lato', sans-serif;-->
 					<a href="index.html"><img src="imagenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/></a>
 				</figure>
 				<h1><a href="index.html">ZapInst</a></h1>
-				<h1 id="buscar">Buscar</h1>
+				<h2 id="buscar">Buscar</h2>
 				<div class="search" id="search">
 					<figure class="logotipo" id="logo-search">
 					<a href="index.html"><img src="imagenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/></a>
@@ -42,13 +42,13 @@ font-family: 'Lato', sans-serif;-->
 					<input type="search" class="search-cuadro" placeholder="Buscar..."/>
 					<input type="submit" value="Buscar" class="search-submit" />
 					</div>
-					<h1 id="quitar">Cancelar</h1>
+					<h2 id="quitar">Cancelar</h2>
 				</div>
 				<ol class="usuarios">
 					<li id="login">Iniciar Sesión</li>
-					<a href="index.html#contenedor-unete"><li id="users">Únete</li></a>
+					<li id="users"><a href="index.html#contenedor-unete">Únete</a></li>
 				</ol>
-				</div>
+			</div>
 			<div class="header-right">
 				<ol class="redes">
 					<li><a><img src="imagenes/facebook-icon.png" alt="facebook"/></a></li>
@@ -91,18 +91,148 @@ font-family: 'Lato', sans-serif;-->
 			<h3>¿Olvidaste tu contraseña?</h3>
 		</div>
 	</div>
-	<nav>
-		<div>
-			<button>Filtros</button>
+	<div class="contenedor-description">
+		<div class="title-description">
+			<figure class="logotipo-title-description">
+				<img src="imagenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/>
+			</figure>
+			<h1>Zapinst</h1>
 		</div>
-	</nav>
+		<h2>Plataforma online especializada en en compra, venta por mayor y menor de zapatillas y artículos deportivos  de las marcas mas representativas del mercado mundial.</h2>
+		<p>En <span>ZAPINST</span> encontrarás los mejores precios en los diversos modelos de zapatillas de las marcas mas representativas del mercado internacional:<span> Nike, Adidas, Reebok, Puma,Air Jordan, Vans, Converse, DC</span> entre otras.<br/>
+		Los modelos mas variados para que se acomoden a tus necesidades:<span> running, fútbol, voley, basquetball, skateboard, o lo que necesites.</span> 
+		<br/>
+		Hacemos envíos a todo el Perú y ofrecemos <span> delivery GRATIS</span> en Lima Metropolitana.</p>
+		<div class="description-brand">
+			<h2>Principales Marcas</h2>
+			<div class="conteiner-brand">
+				<figure class="brand">
+					<img src="imagenes/brands/nike1.png" alt="Nike"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/nike2.png" alt="Nike-SB"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/adidas1.JPG" alt="Adidas"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/adidas2.png" alt="Adidas-Origin"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/adidas3.png" alt="Adidas-Performance"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/jordan.png" alt="Air-Jordan"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/puma.jpg" alt="Puma"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/reebok.png" alt="Reebok"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/umbro.png" alt="Umbro"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/vans.png" alt="Vans"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/dc.png" alt="DC"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/converse.png" alt="Converse"/>
+				</figure>
+				<figure class="brand">
+					<img src="imagenes/brands/reef.PNG" alt="Reef"/>
+				</figure>
+			</div>
+		</div>
+	</div>
+	<section id="contenedor-tutorials">
+    	<div class="tutorials">
+			<h1>¿Cómo comprar?</h1>
+			<div class="tutorials-video">
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/1y6smkh6c-0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="tutorials">
+			<h1>¿Cómo crear tu tienda virtual?</h1>
+			<div class="tutorials-video">
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/EOnSh3QlpbQ" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="tutorials">
+			<h1>¿Por qué ZapInst?</h1>
+			<div class="tutorials-video">
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/S1V4Gf12FmY" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+<!--<nav id="filters">
+		<div class="contenedor-filters">
+			<button class="button">Filtros</button>
+			<form class="contenedor-filters">
+				<div>
+					<input type="reset" value="limpiar filtros"/>
+				</div>
+				<h2>Filtros</h2>
+				<span class="icon-close"></span>
+				<div class="filters">
+					<div class="filter-gender">
+						<input class="button" type="button" value="Men"/>
+						<input class="button" type="button" value="Mujer"/>
+						<input type="button" class="button"  value="Niños"/>
+					</div>
+					<div class="filter-tallas">
+						<input type="button" value="2" />
+						<input type="button" value="2.5" />
+						<input type="button" value="3" />
+						<input type="button" value="3.5" />
+						<input type="button" value="4" />
+						<input type="button" value="4.5" />
+						<input type="button" value="5" />
+						<input type="button" value="5.5" />
+						<input type="button" value="6" />
+						<input type="button" value="6.5" />
+						<input type="button" value="7" />
+						<input type="button" value="7.5" />
+						<input type="button" value="8" />
+						<input type="button" value="8.5" />
+						<input type="button" value="9" />
+						<input type="button" value="9.5" />
+						<input type="button" value="10" />
+						<input type="button" value="10.5" />
+						<input type="button" value="11" />
+						<input type="button" value="11.5" />
+						<input type="button" value="12" />
+					</div>
+					<div class="filter-category">
+						<input type="url"/>
+						
+					</div>
+					<div class="filter-brand">
+					</div>
+					<div class="filter-color">
+						<h2>Color</h2>
+						<input type="checkbox" id="Color-black" name="Color-Black" value="white"/>
+						<input type="checkbox" id="Color-white" name="Color-white" value="white"/>
+						<input type="checkbox" id="color-blue" name="color-blue" value="blue" >
+						<input type="checkbox" id="color-red" name="color-red" value="red"/>
+						<input type="checkbox" id="color-gray" name="color-gray" value="gray"/>
+						<input type="checkbox" id="color-orange" name="color-orange" value="orange"/>
+					</div>
+				</div>
+			</form>
+		</div>
+	</nav>-->
 	<section id="body-sneakers">
     	<div class="contenedor-sneakers">	
+    		<h2 class="title">Comprar Ahora</h2>
 			<div class="body-sneakers">
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/05369142_w.png" alt="air jordan"/>
+						<img src="imagenes/jordan-retro-10.jpeg" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -114,7 +244,7 @@ font-family: 'Lato', sans-serif;-->
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/63601443045-air-jordan-12-retro-gym-red-gym-red-white-black-012457_1.jpg" alt="air jordan"/>
+						<img src="imagenes/air4.jpg" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -126,7 +256,7 @@ font-family: 'Lato', sans-serif;-->
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/63611743040-air-jordan-12-retro-gg-gs-hyper-jade-black-mtlc-silver-hyper-jade-012462_1.jpg" alt="air jordan"/>
+						<img src="imagenes/jordan-retro-12-gym-red.jpg" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -138,7 +268,7 @@ font-family: 'Lato', sans-serif;-->
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/air-jordan-1-ko-model-image_wko48s.jpg" alt="air jordan"/>
+						<img src="imagenes/jordan-retro-12.jpg" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -150,7 +280,7 @@ font-family: 'Lato', sans-serif;-->
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/air-jordan-3-retro-2013-release-white-fire-red-silver-black-011786_1.jpg" alt="air jordan"/>
+						<img src="imagenes/jordan-retro-3.jpg" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -162,7 +292,7 @@ font-family: 'Lato', sans-serif;-->
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/air-jordan-4-retro-2012-release-black-cement-grey-fire-red-011651_1.jpg" alt="air jordan"/>
+						<img src="imagenes/jordan-retro-4.jpg" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -174,7 +304,7 @@ font-family: 'Lato', sans-serif;-->
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/air-jordan-10-retro-og-hero_tlrkaf.jpg" alt="air jordan"/>
+						<img src="imagenes/jordan-retro-8.png" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -186,7 +316,7 @@ font-family: 'Lato', sans-serif;-->
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/air-jordan-11-retro-72-10-black-gym-red-white-anthcite-012345_1.jpg" alt="air jordan"/>
+						<img src="imagenes/jordan-velvet-11.jpg" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -198,7 +328,35 @@ font-family: 'Lato', sans-serif;-->
 			</div>
 		</div>
 	</section>
-	<div id="contenedor-unete" class="contenedor-unete">
+	<section class="value-proposition">
+			<div class="proposition">
+				<span class="icon-home"></span>
+				<h1>Comodidad y Facilidad</h1>
+				<p>Compra online desde tu casa, oficina, móvil o donde te encuentres y paga de la manera que desees, con tarjeta crédito o débito, Paypal, transferencia bancaria, o al contado contra entrega</p>
+			</div>
+			<div class="proposition">
+				<span class="icon-truck"></span>
+				<h1>Delivery Gratis</h1>
+				<p>Envíos gratuitos a los diferentes centros comerciales de Lima Metropolitana y Callao, y las tarifas de envios a muy bajos precios al resto del Perú.</p>
+			</div>
+			<div class="proposition">
+				<span class="icon-clock"></span>
+				<h1>Entrega Rápida</h1>
+				<p>Nuestro servicio de delivery puede ser solo de horas dependiendo de donde quiera recogerlo.<br/>
+				Para mayores detalles revisa nuestro <a href="cronograma.html">cronograma de envíos.</a></p>
+			</div>
+			<div class="proposition">
+				<span class="icon-price"></span>
+				<h1>Los mejores Precios</h1>
+				<p>Tenemos los mejores precios los 365 días del año en zapinst.com ya sea la compra por mayor o menor</p>
+			</div>
+			<div class="proposition">
+				<span class="icon-price-seller"></span>
+				<h1>Vende a traves de ZapInst</h1>
+				<p>Crea tu tienda virtual y conectate con clientes a nivel nacional, por medio de ZapInst y todas las herramientas que te brinda, y vende por mayor y menor, se nuestro SOCIO.</p>
+			</div>
+    </section>
+    <div id="contenedor-unete" class="contenedor-unete">
 		<div class="unete">
 			<span class="close-login"><img src="imagenes/close.png" alt="close" width="20px" id="quit-unete"/></span>
 			<h2 class="title-unete">Únete</h2>
@@ -214,7 +372,7 @@ font-family: 'Lato', sans-serif;-->
 				</div>
 				<div class="user-wholesaler">
 					<a href="register-user-wholesaler.html"><figure>
-					<img src="imagenes/carro-de-la-compra.jpg" alt="Cliente Mayorista"/>
+					<img src="imagenes/carro-de-la-compra.png" alt="Cliente Mayorista"/>
 					</figure></a>
 					<h2><a href="register-user-wholesaler.html">Cliente Mayorista</a></h2>
 					<h3><a href="register-user-wholesaler.html">Busca los mejores modelos de las mejores marcas y con los mejores precios para tus clientes.</a></h3>
@@ -231,49 +389,53 @@ font-family: 'Lato', sans-serif;-->
 			</div>
 		</div>
 	</div>
-	<section class="value-proposition">
-			<div class="proposition">
-				<h1>Comodidad y Facilidad</h1>
-				<p>Compra online desde tu casa, oficina, móvil o donde te encuentres y paga de la manera que desees, con tarjeta crédito o débito, Paypal, transferencia bancaria, o al contado contra entrega</p>
-			</div>
-			<div class="proposition">
-				<h1>Delivery Gratis</h1>
-				<p>Envíos gratuitos a los diferentes centros comerciales de Lima Metropolitana y Callao, y las tarifas de envios a muy bajos precios al resto del Perú.</p>
-			</div>
-			<div class="proposition">
-				<h1>Entrega Rápida</h1>
-				<p>Nuestro servicio de delivery puede ser solo de horas dependiendo de donde quiera recogerlo.<br/>
-				Para mayores detalles revisa nuestro <a href="cronograma.html">cronograma de envíos.</a></p>
-			</div>
-			<div class="proposition">
-				<h1>Los mejores Precios</h1>
-				<p>Tenemos los mejores precios los 365 días del año en zapinst.com ya sea la compra por mayor o menor</p>
-			</div>
-			<div class="proposition">
-				<h1>Vende a traves de ZapInst</h1>
-				<p>Crea tu tienda virtual y conectate con clientes a nivel nacional, por medio de ZapInst y todas las herramientas que te brinda, y vende por mayor y menor, se nuestro SOCIO.</p>
-			</div>
-    </section>
-    <section>
-    	<div>
-			<h1>¿Cómo comprar?</h1>
-			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/1y6smkh6c-0" frameborder="0" allowfullscreen></iframe>
-			</div>
+	<div class="conteiner-oferts">
+		<div class="oferts">
+			<h1>Liquidación, Ofertas y Descuentos de temporada.</h1>
+			<a href="oferst.html"><button class="button">Click Aquí</button></a>
 		</div>
-		<div>
-			<h1>¿Cómo crear tu tienda virtual?</h1>
-			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/EOnSh3QlpbQ" frameborder="0" allowfullscreen></iframe>
-			</div>
+	</div>
+	<div class="conteiner-contact">
+		<div class="zapinst">
+			<h2>Zapinst</h2>
+			<ol>
+				<li><a href="zapinst.html">Acerca de ZAPINST</a></li>
+				<li><a href="proveedores.hmtl">Proveedores</a></li>
+				<li><a href="sociedad.hmtl">Socios</a></li>
+			</ol>
 		</div>
-		<div>
-			<h1>¿Por qué ZapInst?</h1>
-			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/S1V4Gf12FmY" frameborder="0" allowfullscreen></iframe>
-			</div>
+		<div class="customer-support">
+			<h2>Atención al Cliente</h2>
+			<ol>
+				<li><a href="ayuda.html">Centro de ayuda</a></li>
+				<li><a href="experiencias.html">Experiencia de usuarios</a></li>
+				<li><a href="payment.html">Formas de Pago</a></li>
+				<li><a href="envio.hmtl">Confirmación y Envío</a></li>
+				<li><a href="changue.html">Cambios y Devoluciones</a></li>
+				<li><a href="password">Cambiar o Recuperar contraseña</a></li>
+			</ol>
 		</div>
-	</section>
+		<div class="contact">
+			<h2>Contáctanos</h2>
+			<ol>
+				<li><span class="icon-phone"></span>Telf. Fijo: 01 550-3471</li>
+				<li><span class="icon-mobile"></span>Telf. Móvil: 970780395 /                              984545737</li>
+				<li><span class="icon-whatsapp"></span>WhatsApp: 970780395</li>
+				<li><span class="icon-email"></span>Email: ventas@zapinst.com</li>
+			</ol>
+		</div>
+		<div class="social-media">
+			<h2>Síguenos</h2>
+			<ol class="social-redes">
+					<li><a><img src="imagenes/facebook-icon.png" alt="facebook"/></a></li>
+					<li><a><img src="imagenes/twit_logo.png" alt="twitter"/></a></li>
+					<li><a><img src="imagenes/SnapChat_Rounded_icon-icons.com_61574.png" alt="snapchat"/></a></li>
+					<li><a><img src="imagenes/Instagram-PNG-File.png" alt="instagram"/></a></li>
+					<li><a><img src="imagenes/Pinterest+Icon.png" alt="pinterest"/></a></li>
+				</ol>
+		</div>
+		
+	</div>
 	<footer id="footer">
 		<div class="footer">
 			<h2><a href="preg-frecu.html">Preguntas Frecuentes</a></h2>
@@ -283,7 +445,6 @@ font-family: 'Lato', sans-serif;-->
 			<h2><a href="delivery.html">Delivery</a></h2>
 		</div>
 	</footer>
-	
 	
 	<script>
 		var buscadorOn = document.getElementById("buscar");
@@ -335,7 +496,6 @@ font-family: 'Lato', sans-serif;-->
 		}
 		
 	</script>
-	
 	
 </body>
 </html>

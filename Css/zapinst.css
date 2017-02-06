@@ -1,5 +1,74 @@
 @charset "utf-8";
 /* CSS Document */
+/*iconos*/
+@font-face {
+ font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?aoaim3');
+  src:  url('../fonts/icomoon.eot?aoaim3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?aoaim3') format('truetype'),
+    url('../fonts/icomoon.woff?aoaim3') format('woff'),
+    url('../fonts/icomoon.svg?aoaim3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+  content: "\e902";
+}
+.icon-price:before {
+  content: "\e935";
+}
+.icon-price-seller:before {
+  content: "\e936";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.icon-truck:before {
+  content: "\e9b0";
+}
+.icon-power:before {
+  content: "\e9b5";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+.icon-email:before {
+  content: "\e945";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+/*iconos*/
+
 
 html
 {
@@ -36,7 +105,6 @@ body
 	margin: 0px;
 	background: white;
 }
-
 	
 .logotipo img
 {
@@ -67,6 +135,7 @@ body
 	text-decoration: none;
 	color: black;
 	font-size: 13px;
+	display: block;
 }
 
 .header-left h1:hover, .header-left ol li:hover
@@ -115,7 +184,7 @@ body
 {
 	list-style:none;
 	display: flex;
-	justify-content: flex-end;
+	justify-content:space-around;
 	align-items: center;
 	text-transform: uppercase;
 	font-weight:600;
@@ -127,6 +196,7 @@ body
 {
 	font-size: 12px;
 	margin-left: 10px;
+	text-align: center;
 }
 
 .usuarios a
@@ -165,7 +235,7 @@ body
 	height: 100%;
 	z-index: 2;
 	position: fixed;
-	top:-1000px;
+	top:-200%;
 	left:0px;
 	right: 0px;
 	transition:linear .3s;
@@ -290,7 +360,6 @@ input:focus
 	margin: auto;
 	background: rgba(194,194,194,0.7);		
 	text-align: center;
-	border: 1px solid gray;
 }
 
 .unete
@@ -390,7 +459,7 @@ h2.title-unete
 	height: 110px;
 	border-radius: 40px;
 }
-	/*users*/
+/*users*/
 
 /*header*/
 
@@ -444,6 +513,7 @@ h2.title-unete
 	display: flex;
 	justify-content: space-between;
 }
+
 .previous, .next
 {
 	height: 245px;
@@ -459,29 +529,172 @@ h2.title-unete
 	padding: 0px;
 }
 
-a.previous:active ul
+/*banner*/
+
+/*description*/
+.contenedor-description
 {
-	transform: translate(-950px,0px);
+	width: 1000px;
+	margin: 20px auto;
+	text-align: center;	
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
-/*banner*/
+.title-description
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	margin: 30px 10px 10px;
+	border-bottom: 0.5px solid lightgray;
+}
+
+.logotipo-title-description
+{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	padding: 0px;
+	margin: 0px;
+	background: white;
+}
+
+.logotipo-title-description img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.title-description h1
+{
+	text-transform: uppercase;
+	margin-left: 15px;
+	font-size: 25px;
+	letter-spacing: 2.5px;
+}
+
+.contenedor-description h2
+{
+	font-size: 16px;
+	margin: 0px 10px;
+	padding-bottom: 10px;
+	border-bottom: 0.5px solid lightgray;
+}
+
+.contenedor-description p
+{
+	font-size: 14px;
+	margin:10px;
+	padding: 10px 0px 20px 0px;
+	border-bottom: 0.5px solid lightgray;
+}
+
+.contenedor-description p span
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color:#3DD7D5;
+}
+
+.description-brand
+{
+	padding: 20px;
+}
+
+.description-brand h2
+{
+	font-size: 18px;
+	width: 220px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-align: left;
+	border-bottom: 3px solid black;
+	margin: 0px 50px;
+	padding: 0px;
+}
+
+.conteiner-brand
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.brand
+{
+	height: auto;
+	max-width: 125px;
+	padding: 0px;
+	margin: 20px;
+}
+
+.brand img
+{
+	max-width: 125px;
+	height: auto;
+}	
+/*description*/
+
+/*nav = filters*/
+#filters
+{
+	border: 1px solid
+}
+
+.contenedor-filters
+{
+	width: 1000px;
+	margin: 0px auto;
+	text-align: center;
+	padding: 0px;
+}
+
+.contenedor-filters button
+{
+}
+
+.input-color
+{
+	border-radius: 100%;
+	background: green;
+}
+/*nav = filters*/
 
 /*body-sneakers*/
 #body-sneakers
 {
 	background:rgba(241, 241, 241, 0.4);
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
 }
 
 .contenedor-sneakers
 {
-	width: 1100px;
+	width: 1000px;
 	margin: auto;
+}
+
+.title
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 18px;
+	text-align: center;
+	padding: 30px;
+	border-bottom: 0.5px solid lightgray;
 }
 
 .body-sneakers
 {
-	width: 900px;
-	padding: 70px 0px 50px 0px;
+	width: 1000px;
+	padding-bottom:50px;
 	display: flex;
 	justify-content:space-around;
 	align-items:center;
@@ -497,21 +710,18 @@ a.previous:active ul
 	text-decoration: none;
 	color: black;
 	padding: 0px;
-	width: 33%;
+	width: 32%;
 }
 
 .sneakers
 {
 	padding: 20px 30px;
-	background: white;
-	display: flex;
-	flex-direction: column;
-	justify-content:space-between;
-	align-items: baseline;
 	border-radius: 2px;
 	overflow: hidden;
 	position: relative;
-	height: 390px;
+	height: 370px;
+	background: white;
+	
 }
 
 .sneakers:hover
@@ -537,8 +747,7 @@ a.previous:active ul
 
 .sneakers img
 {
-	max-width: 70%;
-	vertical-align: middle;
+	width: 70%;
 }
 
 .sneakers-name
@@ -557,8 +766,10 @@ a.previous:active ul
 	font-size: 15px;
 	position: absolute;
 	bottom:-50px;
+	left: 0px;
+	width: 100%;
 	letter-spacing: 1.5px;
-	width: 80%;
+	text-align: center;
 }
 
 .sneakers-price
@@ -567,18 +778,19 @@ a.previous:active ul
 	font-size: 14px;
 	margin: 20px 0px;
 }
-
 /*body-sneakers*/
 
 /*value-proposition*/
 .value-proposition
 {
-	width: 900px;
+	width: 1000px;
 	margin: auto;
 	display: flex;
+	justify-content: space-around;
 	flex-wrap:wrap;
 	height: auto;
-	border: 1px solid ;
+	padding: 30px 0px;
+	border-bottom: 1px solid black;
 }
 
 .proposition
@@ -586,8 +798,25 @@ a.previous:active ul
 	width: 155px;
 	border: 1px solid lightgray;
 	padding: 10px;
+	margin: 10px 0px;
 	text-align: center;
 	border-radius: 5px;
+}
+
+.proposition:hover
+{
+	border: 1px solid #3DD7D5;
+}
+
+.proposition:hover span
+{
+	font-size: 28px;
+	color: #3DD7D5;
+}
+
+.icon-home, .icon-price, .icon-price-seller, .icon-clock, .icon-truck
+{
+	font-size: 25px;
 }
 
 .proposition h1
@@ -595,7 +824,6 @@ a.previous:active ul
 	text-transform: uppercase;
 	font-size: 15px;
 	letter-spacing: 2px;
-	border: 1px solid lightgray;
 	padding: 0px;
 	margin-top: 10px;
 }
@@ -604,7 +832,173 @@ a.previous:active ul
 {
 	font-size: 13.5px;
 }
+
+.proposition p a
+{
+	color: black;
+	font-weight: bold;
+}
 /*value-proposition*/
+
+/*tutorials*/
+#contenedor-tutorials
+{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	display: flex;
+}
+
+.tutorials
+{
+	padding: 15px;
+	width: 330px;
+}
+
+.tutorials h1
+{
+	font-size: 14.5px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	padding: 0px;
+	margin: 10px 0px 20px; 
+}
+
+.tutorials-video
+{
+	position: relative;
+	padding-top: 56.25%;
+}
+
+.video
+{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+}
+/*tutorials*/
+
+/*oferts*/
+.conteiner-oferts
+{
+	background: black;
+}
+
+.oferts
+{
+	color:white;
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.oferts h1
+{
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.oferts a
+{
+	display: block;
+}
+
+.oferts button
+{
+	background: white;
+	color: black;
+}
+
+.oferts button:Hover
+{
+	background: #3DD7D5;
+	color: white;
+}
+/*oferts*/
+
+/*contact*/
+.conteiner-contact
+{
+	width: 1000px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.conteiner-contact h2
+{
+	text-transform: uppercase;
+	font-size: 17px;
+	letter-spacing: 2px;
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+}
+
+.conteiner-contact li, .conteiner-contact ol
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.conteiner-contact li a, .conteiner-contact li
+{
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	margin: 3px 0px;
+}
+
+.conteiner-contact li a:hover
+{
+	text-decoration: underline;
+}
+
+.zapinst, .customer-support, .contact, .social-media
+{
+	width: 21%;
+	padding: 20px;
+	border-right: 0.5px solid lightgray;
+}
+
+.zapinst
+{
+	border-left: 0.5px solid lightgray;
+}
+
+.icon-mobile, .icon-whatsapp, .icon-email, .icon-phone
+{
+	margin-right: 5px ;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.social-redes
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.social-redes li img
+{
+	width: 30px;
+	padding: 10px;
+	margin: 0px;
+}
+/*contact*/
 
 /*footer*/
 #footer
@@ -615,15 +1009,16 @@ a.previous:active ul
 .footer
 {
 	padding: 20px 0px;
-	width: 900px;
+	width: 1000px;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .footer h2
 {
-	margin: 0px 0px 10px 0px;
+	margin: 0px 20px 10px 0px;
 }
 
 .footer h2 a
@@ -643,126 +1038,419 @@ a.previous:active ul
 }
 /*footer*/
 
-
-
-@media screen and (max-width:940px)
+@media screen and (max-width:1040px)
 {
-	.contenedor-unete
-	{
-		width: auto;	
-	}
-	
-	.footer
-	{
-		width: auto;
-	}
-	
-	.contenedor-sneakers, .body-sneakers, .sneakers
-	{
-		width: auto;
-		height: auto;
-	}
+	/*header*/
 	.contenido
 	{
 		width: auto;
 		padding: 10px;
 	}
 	
-	/*banner*/
+	/*users*/
+	.contenedor-unete
+	{
+		width: auto;
+		margin: 0px 10px;
+	}
+	/*users*/
+	/*header*/
 	
-	.conteiner-banner
+	/*banner*/
+	.banner, .controles
 	{
 		width: auto;
 		padding: 0px 10px;
 	}
 	
-	.banner
-	{
-		width: auto;
-	}
-
 	.list-banner
 	{
 		width: auto;
 	}
-
-	.controles
+	/*banner*/
+	
+	/*description*/
+	.contenedor-description
 	{
 		width: auto;
-		padding:0px 10px;
+		margin: 20px 10px;
 	}
-	/**/
-}
+	
+	.brand, .brand img
+	{
+		max-width: 110px;
+		height: auto
+	}
 
-@media screen and (max-width:810px)
-{
+	.logotipo-title-description
+	{
+		width: 60px;
+		height: 60px;
+	}
+
+	.title-description h1
+	{
+		font-size: 23px;
+	}
+
+	.contenedor-description h2
+	{
+		font-size: 15px;
+	}
+
+	.contenedor-description p
+	{
+		font-size: 13px;
+	}
+
+	.description-brand h2
+	{
+		font-size: 17px;
+		width: 210px;
+		border-bottom: 2.8px solid black;
+	}
+	/*description*/
+	
+	/*tutorials*/
+	#contenedor-tutorials
+	{
+		width: auto;
+		margin: auto 10px;
+		align-items:flex-end;
+	}
+	
+	.tutorials h1
+	{
+		font-size: 13.5px;
+	}
+	/*tutorials*/
+	
+	/*body-sneakers*/
+	.contenedor-sneakers, .body-sneakers
+	{
+		width: auto;	
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
 	.sneakers
 	{
 		height: 340px;
+
 	}
+	/*body-sneakers*/
+	
+	/*value-proposition*/
+	.value-proposition
+	{
+		width: auto;
+		margin: auto 10px;
+	}
+	
+	.proposition
+	{
+		width: 150px;
+	}
+	
+	.proposition:hover span
+	{
+		font-size: 25px;
+	}
+
+	.icon-home, .icon-price, .icon-price-seller, .icon-clock, .icon-truck
+	{
+		font-size: 22px;
+	}
+	
+	.proposition h1
+	{
+		font-size: 14px;
+	}
+
+	.proposition p
+	{
+		font-size: 12.5px;
+	}
+	/*value-proposition*/
+	
+	/*oferts*/
+	.oferts
+	{
+		width: auto;
+		margin: 0 10px;
+	}
+
+	.oferts h1
+	{
+		font-size: 19px;
+	}
+	/*oferts*/
+
+	/*contact*/
+	.conteiner-contact
+	{
+		width: auto;
+		margin: 10px;
+	}
+
+	.conteiner-contact h2
+	{
+		font-size: 16px;
+	}
+
+	.conteiner-contact li a, .conteiner-contact li
+	{
+		font-size: 13px;
+	}
+	/*contact*/
+
+	/*footer*/
+	.footer
+	{
+		width: auto;
+		margin: auto 10px;
+	}
+
+	.footer h2 a
+	{
+		font-size: 11px;
+	}
+	/*footer*/
 }
 
-@media screen and (max-width:500px)
+@media screen and (max-width:850px)
 {
+	/*description*/
+	.brand, .brand img
+	{
+		max-width: 95px;
+	}
+
+	.logotipo-title-description
+	{
+		width: 55px;
+		height: 55px;
+	}
+
+	.title-description h1
+	{
+		font-size: 22px;
+	}
+
+	.contenedor-description h2
+	{
+		font-size: 14px;
+	}
+
+	.contenedor-description p
+	{
+		font-size: 12px;
+	}
+
+	.description-brand h2
+	{
+		font-size: 16px;
+		width: 200px;
+		border-bottom: 2.3px solid black;
+	}
+	/*description*/
 	
+	/*tutorials*/
+	#contenedor-tutorials
+	{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.tutorials h1
+	{
+		font-size: 12.5px;
+	}
+	/*tutorials*/
+	
+	/*body-sneakers*/
+	.title
+	{
+		font-size: 17px;
+	}
+	
+	.body-sneakers a
+	{
+		width: 31%;
+	}
+
+	.sneakers
+	{
+		height: 310px;
+
+	}
+
+	.sneakers img
+	{
+		width: 65%;
+	}
+
+	.sneakers-name
+	{
+		font-size: 11.5px;
+		padding: 15px 25px;
+	}
+
+	.sneakers-tallas, .sneakers-price
+	{
+		font-size: 13px;
+	}
+	/*body sneakers*/
+	
+	/*value-proposition*/
+	.proposition
+	{
+		width: 140px;
+	}
+	
+	.proposition:hover span
+	{
+		font-size: 23px;
+	}
+
+	.icon-home, .icon-price, .icon-price-seller, .icon-clock, .icon-truck
+	{
+		font-size: 20.5px;
+	}
+	
+	.proposition h1
+	{
+		font-size: 13px;
+	}
+
+	.proposition p
+	{
+		font-size: 12px;
+	}
+	/*value-proposition*/
+	
+	/*users*/
+	.users-cuadros h2
+	{
+		font-size: 13px;
+	}
+	
+	.unete h3
+	{
+		font-size: 12px;
+	}
+
+	.user-buyer, .user-wholesaler, .user-seller
+	{
+		width: 28.5%;
+	}
+
+	.unete figure
+	{
+		width: 165px;
+		height: 165px;
+	}
+
+	.user-buyer img, .user-wholesaler img
+	{
+		width: 90px;
+		height: 90px;
+	}
+
+	.user-seller img
+	{
+		width: 160px;
+		height: 100px;
+	}
+	
+	.user-buyer button, .user-wholesaler button, .user-seller button
+	{
+		width: 180px;
+		font-size: 10px;
+	}
+	/*users*/
+	
+	/*oferts*/
+	.oferts
+	{
+		margin: 0 10px;
+	}
+
+	.oferts h1
+	{
+		font-size: 16px;
+	}
+	/*oferts*/
+
+	/*contact*/
+	.conteiner-contact h2
+	{
+		font-size: 15px;
+	}
+
+	.conteiner-contact li a, .conteiner-contact li
+	{
+		font-size: 12px;
+	}
+	
+	.icon-mobile, .icon-whatsapp, .icon-email, .icon-phone
+	{
+		font-size: 13px;
+	}
+	/*contact*/
+
+	/*footer*/
+	.footer h2 a
+	{
+		font-size: 10.5px;
+	}
+	/*footer*/	
+}
+
+@media screen and (max-width:650px)
+{
+	/*header*/
+	.logotipo, .logotipo img
+	{
+		width: 70px;
+		height: 70px;
+	}
+	
+	.header-left h1 a, .header-left h2
+	{
+		font-size: 12px;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	.header-left h2:hover
+	{
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	
+	.usuarios li
+	{
+		font-size: 12px;
+	}
+	
+	.redes
+	{
+		margin-top: 20px;
+	}
+	
+	.redes li img
+	{
+		width: 27.5px;
+	}
 	/*header*/
 	
-	.header
-	{
-		border-bottom: 2px solid;
-	}
-	
-	.header h1
-	{
-		margin:0px 0px 0px 10px;
-		font-weight: 600;
-		font-size: 10px;
-	}
-	
-	.header-left h1 a
-	{
-		font-size: 10px;
-	}
+	/*search*/
 	#logo-search, #buscar, #quitar
 	{
 		display:inherit;
 	}
 	
-	.logotipo
-	{
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-	}
-	
-	.logotipo img
-	{
-		width: 50px;
-		height: 50px;
-		margin:0px;
-	}	
-	
-	.usuarios li
-	{
-		font-size: 10px;
-		margin-left: 10px;
-	}
-
-	.redes
-	{
-		display: flex;
-		justify-content: flex-end;
-		margin-top: 20px;
-	}
-
-	.redes li img
-	{
-		width: 25px;
-	}
-	
-	/*header*/
-	
-	/*search*/
 	.search
 	{
 		width: auto;
@@ -808,7 +1496,7 @@ a.previous:active ul
 		font-size: 0em;
 		padding: 0px;
 		margin: 0px;
-		background: url(../Imágenes/search.png);
+		background: url( ../imagenes/search.png);
 		background-size: cover;
 		border: none;
 		cursor: pointer;
@@ -821,31 +1509,34 @@ a.previous:active ul
 		width: auto;
 	}
 	/*login*/
-
+	
 	/*users*/
 	.contenedor-unete
 	{
+		max-width: 660px;
 		width: auto;
 		position: absolute;
 		top:0px;
-		left:0px;
-		right: 0px;
-		z-index: -4;
+		left:-300%;;
+		right:0px;
 		padding: 15px;
-		opacity: 0;
 		transition: .2s;
+		margin: 0px;
 	}
 	
 	.unete
 	{
 		border: 1px solid gray;
+<<<<<<< HEAD
 			padding: 15px;
+=======
+		padding: 15px;
+>>>>>>> gh-pages
 	}
 	
 	.activar-unete
 	{
-		opacity: 1;
-		z-index: 3;
+		left: 0px;
 	}
 	
 	span.close-login
@@ -895,31 +1586,190 @@ a.previous:active ul
 	}
 	/*users*/
 	
-	/*sneakers-body*/
+	/*description*/
+	.brand, .brand img
+	{
+		max-width: 80px;
+	}
+	
+	.brand
+	{
+		margin: 10px;
+	}
+
+	.title-description h1
+	{
+		font-size: 21px;
+	}
+
+	.contenedor-description h2
+	{
+		font-size: 13px;
+	}
+
+	.contenedor-description p
+	{
+		font-size: 11.5px;
+	}
+
+	.description-brand h2
+	{
+		font-size: 14px;
+		width: 175px;
+		border-bottom: 2.3px solid black;
+	}
+	/*description*/
+	
+	/*body-sneakers*/
+	.title
+	{
+		font-size: 16px;
+	}
+	
+	.body-sneakers a
+	{
+		width: 31%;
+	}
+
+	.sneakers
+	{
+		height: 260px;
+		padding: 20px;
+	}
+
+	.sneakers img
+	{
+		width: 60%;
+	}
+
 	.sneakers-name
 	{
 		font-size: 10px;
-		letter-spacing: 2px;
-		margin-bottom:40px;
+		padding: 15px 25px;
+	}
 
+	.sneakers-tallas, .sneakers-price
+	{
+		font-size: 12px;
+	}
+	/*body sneakers*/
+	
+	/*value-proposition*/
+	.value-proposition
+	{
+		border-bottom: none;
 	}
 	
-	.senakers img
+	.proposition:hover span
 	{
-		max-width: 100%;
-		max-height: 100%;
+		font-size: 20px;
 	}
-	
-	.sneakers-tallas
+
+	.icon-home, .icon-price, .icon-price-seller, .icon-clock, .icon-truck
 	{
-		font-weight: 100;
+		font-size: 18px;
+	}
+	/*value-proposition*/
+	
+	/*oferts*/
+	.oferts h1
+	{
 		font-size: 13px;
-		width: 110px;
-		position: absolute;
-		bottom:-50px;
-		letter-spacing: 1.5px;
 	}
-	/*sneakers-body*/
+	/*oferts*/
+	
+	/*contact*/
+	.conteiner-contact
+	{
+		flex-wrap: wrap;	
+	}
+	
+	.zapinst, .customer-support, .contact, .social-media
+	{
+		width: 190px;
+		border-left: 0.5px solid lightgray;
+		border-collapse: collapse;
+	}
+	.conteiner-contact h2
+	{
+		font-size: 14px;
+	}
+
+	.icon-mobile, .icon-whatsapp, .icon-email, .icon-phone
+	{
+		font-size: 12px;
+	}
+	/*contact*/
+}
+
+@media screen and (max-width:500px)
+{
+	
+	/*header*/
+	.header-left h1 a, .usuarios li, .header-left h2
+	{
+		font-size: 11px;
+		margin: 0px 3px;
+	}
+	
+	.logotipo, .logotipo img
+	{
+		width: 60px;
+		height: 60px;
+	}
+
+	.redes li img
+	{
+		width: 25px;
+	}
+	/*header*/
+	
+	/*body-sneakers*/
+	.title
+	{
+		font-size: 16px;
+	}
+	
+	.body-sneakers a
+	{
+		width: 31%;
+	}
+
+	.sneakers
+	{
+		height: 230px;
+		padding: 20px;
+	}
+
+	.sneakers img
+	{
+		width: 60%;
+	}
+
+	.sneakers-name
+	{
+		font-size: 10px;
+		padding: 5px;
+	}
+
+	.sneakers-tallas, .sneakers-price
+	{
+		font-size: 12px;
+	}
+	/*body sneakers*/
+	
+	/*oferts*/
+	.oferts h1
+	{
+		font-size: 11px;
+		margin: 3px;
+	}
+	
+	.oferts button
+	{
+		width: 165px
+	}
+	/*oferts*/
 	
 	/*footer*/
 	.footer
@@ -929,18 +1779,111 @@ a.previous:active ul
 		margin: 0px;
 	}
 	
-	.footer h2
-	{
-		margin: 0px 0px 15px 0px;
-	}
-	
 	.footer h2 a
 	{
 		font-size: 10px;
 		letter-spacing: 2.2px;
 	}
-	/*footer*/
+	/*footer*/	
+}
+
+@media screen and (max-width:370px)
+{
+	/*header*/
+	.header-left h1 a, .usuarios li, .header-left h2
+	{
+		font-size: 10px;
+		margin: 0px 3px;
+	}
 	
+	.logotipo, .logotipo img
+	{
+		width: 50px;
+		height: 50px;
+	}
+
+	.redes li img
+	{
+		width: 22px;
+	}
+	/*header*/
+	
+	/*description*/
+	.brand, .brand img
+	{
+		max-width: 65px;
+	}
+	
+	.title-description h1
+	{
+		font-size: 20px;
+	}
+
+	.contenedor-description h2
+	{
+		font-size: 12px;
+	}
+
+	.contenedor-description p
+	{
+		font-size: 11px;
+	}
+
+	.description-brand h2
+	{
+		font-size: 13px;
+		width: 164px;
+		margin: auto;
+		border-bottom: 2px solid black;
+	}
+	/*description*/
+	
+	/*body-sneakers*/
+	.title
+	{
+		font-size: 15px;
+	}
+	
+	.body-sneakers a
+	{
+		width: 32%;
+	}
+
+	.sneakers
+	{
+		height: 200px;
+		padding: 15px
+	}
+
+	.sneakers img
+	{
+		width: 70%;
+	}
+
+	.sneakers-name
+	{
+		font-size: 9px;
+		padding: 0px;
+	}
+
+	.sneakers-tallas, .sneakers-price
+	{
+		font-size: 9px;
+	}
+	/*body sneakers*/
+	
+	/*oferts*/
+	.oferts h1
+	{
+		font-size: 10px;
+		margin: 3px;
+	}
+	
+	.oferts button
+	{
+		width: 140px
+	}
+	/*oferts*/
 }
 
 
