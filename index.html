@@ -3,26 +3,15 @@
 <head>
 <meta charset="utf-8">
 <!--Titulo e Icono-->
+<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
 <title>ZapInst</title>
-
 <!--Estilos CSS-->
-<link href="Css/zapinst.css" type="text/css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Allerta|Droid+Sans|Fira+Sans+Condensed|Gloria+Hallelujah|Kaushan+Script|Lobster|Montserrat|Pacifico" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Lato|Marck+Script|Playball|Shadows+Into+Light+Two" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<!--font-family: 'Allerta', sans-serif;
-font-family: 'Droid Sans', sans-serif;
-font-family: 'Gloria Hallelujah', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Fira Sans Condensed', sans-serif;
-font-family: 'Playball', cursive;
-font-family: 'Shadows Into Light Two', cursive;
-font-family: 'Didact Gothic', sans-serif;
-font-family: 'Marck Script', cursive;
-font-family: 'Lato', sans-serif;-->
+
+<style type="text/css">
+	@charset "utf-8";html{margin:0;padding:0}body{margin:0;padding:0;font-family:'Lato',sans-serif}.contenido{width:1000px;margin:auto;padding:10px 0}.header{border-bottom:2px solid}.logotipo{width:90px;height:90px;border-radius:50%;padding:0;margin:0;background:#fff}.logotipo img{width:100%;height:100%;margin:0}.header-left{display:flex;flex-wrap:nowrap;justify-content:space-between;align-items:center;color:#000;text-transform:uppercase;letter-spacing:1.2px}.header-left h1{margin:0;padding:0}.header-left h1 a{text-decoration:none;color:#000;font-size:13px;display:block}.buscador{height:25px;display:flex}.search-cuadro{width:250px;height:30px;padding:0 10px;margin:0;border-radius:3px;border:1px solid}.search-submit{width:25px;height:25px;font-size:0;padding:0;margin:0;background:url(../imagenes/search.png);background-size:cover;border:none}.usuarios{list-style:none;display:flex;justify-content:space-around;align-items:center;text-transform:uppercase;font-weight:600;margin:0;padding:0}.usuarios li{font-size:12px;margin-left:10px;text-align:center}.usuarios a{text-decoration:none;color:#000}.redes{display:flex;justify-content:flex-end;list-style:none;margin:0;padding:0}.redes li img{width:30px;padding-left:10px}#logo-search,#buscar,#quitar{display:none}.contenedor-login{text-align:center;width:auto;height:100%;z-index:2;position:fixed;top:-200%;left:0;right:0;background:rgba(194,194,194,0.7);padding:15px}.login{border:1px solid gray;border-radius:5px;background-color:#fff;opacity:1;padding:30px 45px;width:450px;margin:50px auto}.close-login{width:100%;display:block;text-align:right}.login h1{border-top:1px solid lightgray;padding:30px 0 20px;text-transform:uppercase;font-size:14px;letter-spacing:3px}.login label,.login input{display:block;text-align:left}.login label{font-size:14px;letter-spacing:1px;margin-bottom:5px}.email,.password{width:auto}.login input{width:92%;max-width:500px;height:35px;border-radius:2px;border:1px solid gray;margin-bottom:30px;padding:0 10px}.button{width:200px;height:50px;background:#000;color:#fff;font-family:'Lato',sans-serif;text-transform:uppercase;font-size:11px;font-weight:700;letter-spacing:2px;border:none;margin-top:20px;margin-bottom:25px}.login h3{font-size:12px;font-weight:100;text-decoration:underline}#quit-unete{display:none}.conteiner-banner{margin:0;position:relative;border-bottom:2px solid #000;background:rgba(0,0,0,0.20)}.banner{width:1000px;margin:auto;padding:0}.list-banner{width:1000px;list-style:none;display:flex;justify-content:center;align-items:center;margin:0;padding:0}.banner1{max-width:1000px;width:100%;height:245px;background-image:url(../imagenes/../imagenes/adidas-banner.jpg);background-repeat:no-repeat;background-size:cover;background-position:center}.controles{position:absolute;top:0;right:0;left:0;width:1000px;margin:auto;display:flex;justify-content:space-between}.previous,.next{height:245px;width:50px;display:flex;justify-content:center;align-items:center;background:rgba(0,0,0,0.60);color:#fff;font-size:30px;margin:0;padding:0}.contenedor-description{width:1000px;margin:20px auto;text-align:center;border:1px solid #000;border-radius:5px}.title-description{display:flex;justify-content:center;align-items:center;padding:0;margin:30px 10px 10px;border-bottom:.5px solid lightgray}.logotipo-title-description{width:70px;height:70px;border-radius:50%;padding:0;margin:0;background:#fff}.logotipo-title-description img{width:100%;height:100%}.title-description h1{text-transform:uppercase;margin-left:15px;font-size:25px;letter-spacing:2.5px}.contenedor-description h2{font-size:16px;margin:0 10px;padding-bottom:10px;border-bottom:.5px solid lightgray}.contenedor-description p{font-size:14px;margin:10px;padding:10px 0 20px;border-bottom:.5px solid lightgray}.contenedor-description p span{text-transform:uppercase;font-weight:700;letter-spacing:1px;color:#3DD7D5}@media screen and (max-width:1040px){.contenido{width:auto;padding:10px}.banner,.controles{width:auto;padding:0 10px}.list-banner{width:auto}.contenedor-description{width:auto;margin:20px 10px}.logotipo-title-description{width:60px;height:60px}.title-description h1{font-size:23px}.contenedor-description h2{font-size:15px}.contenedor-description p{font-size:13px}}@media screen and (max-width:850px){.logotipo-title-description{width:55px;height:55px}.title-description h1{font-size:22px}.contenedor-description h2{font-size:14px}.contenedor-description p{font-size:12px}}@media screen and (max-width:650px){.logotipo,.logotipo img{width:70px;height:70px}.header-left h1 a,.header-left h2{font-size:12px;padding:0;margin:0}.usuarios li{font-size:12px}.redes{margin-top:20px}.redes li img{width:27.5px}#logo-search,#buscar,#quitar{display:inherit}.search{width:auto;display:flex;justify-content:space-around;padding:10px;align-items:center;position:absolute;right:0;left:0;top:-100%;z-index:2;background:#fff}.search-cuadro{width:190px;height:30px;padding:0 10px;margin:0;border-radius:3px;border:1px solid}.search-submit{width:25px;height:25px;font-size:0;padding:0;margin:0;background:url(../imagenes/search.png);background-size:cover;border:none}.login{width:auto}span.close-login{position:relative;padding-bottom:20px}img#quit-unete{display:block;position:absolute;right:0}.title-description h1{font-size:21px}.contenedor-description h2{font-size:13px}.contenedor-description p{font-size:11.5px}}@media screen and (max-width:500px){.header-left h1 a,.usuarios li,.header-left h2{font-size:11px;margin:0 3px}.logotipo,.logotipo img{width:60px;height:60px}.redes li img{width:25px}}@media screen and (max-width:370px){.header-left h1 a,.usuarios li,.header-left h2{font-size:10px;margin:0 3px}.logotipo,.logotipo img{width:50px;height:50px}.redes li img{width:22px}.title-description h1{font-size:20px}.contenedor-description h2{font-size:12px}.contenedor-description p{font-size:11px}}
+</style>
+
 </head>
  <body>
     <!--Logo,busqueda, login-->
@@ -30,13 +19,13 @@ font-family: 'Lato', sans-serif;-->
    	 	<div class="contenido">
 			<div class="header-left">     
 				<figure class="logotipo">
-					<a href="index.html"><img src="imagenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/></a>
+					<a href="index.html"><img src="imagenes/favicon.jpg" class="logotipo-img" alt="logo-zapinst"/></a>
 				</figure>
 				<h1><a href="index.html">ZapInst</a></h1>
 				<h2 id="buscar">Buscar</h2>
 				<div class="search" id="search">
 					<figure class="logotipo" id="logo-search">
-					<a href="index.html"><img src="imagenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/></a>
+					<a href="index.html"><img src="imagenes/favicon.jpg" class="logotipo-img" alt="logo-zapinst"/></a>
 					</figure>
 					<div class="buscador">
 					<input type="search" class="search-cuadro" placeholder="Buscar..."/>
@@ -94,7 +83,7 @@ font-family: 'Lato', sans-serif;-->
 	<div class="contenedor-description">
 		<div class="title-description">
 			<figure class="logotipo-title-description">
-				<img src="imagenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/>
+				<img src="imagenes/favicon.jpg" class="logotipo-img" alt="logo-zapinst"/>
 			</figure>
 			<h1>Zapinst</h1>
 		</div>
@@ -445,6 +434,13 @@ font-family: 'Lato', sans-serif;-->
 			<h2><a href="delivery.html">Delivery</a></h2>
 		</div>
 	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+  	WebFont.load({google: {families: ['Montserrat', 'Allerta','Droid+Sans','Fira+Sans+Condensed','Gloria+Hallelujah','Kaushan+Script','Lobster','Pacifico','Didact+Gothic','Lato','Marck+Script','Playball','Shadows+Into+Light+Two']}});
+	</script> 
+	
+	<link href="Css/zapinst.min.css" type="text/css" rel="stylesheet"/>
 	
 	<script>
 		var buscadorOn = document.getElementById("buscar");
