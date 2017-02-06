@@ -33,7 +33,7 @@ font-family: 'Lato', sans-serif;-->
 					<a href="index.html"><img src="imagenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/></a>
 				</figure>
 				<h1><a href="index.html">ZapInst</a></h1>
-				<h1 id="buscar">Buscar</h1>
+				<h2 id="buscar">Buscar</h2>
 				<div class="search" id="search">
 					<figure class="logotipo" id="logo-search">
 					<a href="index.html"><img src="imagenes/Logo_TV_2015.png" class="logotipo-img" alt="logo-zapinst"/></a>
@@ -42,13 +42,13 @@ font-family: 'Lato', sans-serif;-->
 					<input type="search" class="search-cuadro" placeholder="Buscar..."/>
 					<input type="submit" value="Buscar" class="search-submit" />
 					</div>
-					<h1 id="quitar">Cancelar</h1>
+					<h2 id="quitar">Cancelar</h2>
 				</div>
 				<ol class="usuarios">
 					<li id="login">Iniciar Sesión</li>
-					<a href="index.html#contenedor-unete"><li id="users">Únete</li></a>
+					<li id="users"><a href="index.html#contenedor-unete">Únete</a></li>
 				</ol>
-				</div>
+			</div>
 			<div class="header-right">
 				<ol class="redes">
 					<li><a><img src="imagenes/facebook-icon.png" alt="facebook"/></a></li>
@@ -168,16 +168,66 @@ font-family: 'Lato', sans-serif;-->
 			</div>
 		</div>
 	</section>
-	<nav id="filters">
+<!--<nav id="filters">
 		<div class="contenedor-filters">
 			<button class="button">Filtros</button>
+			<form class="contenedor-filters">
+				<div>
+					<input type="reset" value="limpiar filtros"/>
+				</div>
+				<h2>Filtros</h2>
+				<span class="icon-close"></span>
+				<div class="filters">
+					<div class="filter-gender">
+						<input class="button" type="button" value="Men"/>
+						<input class="button" type="button" value="Mujer"/>
+						<input type="button" class="button"  value="Niños"/>
+					</div>
+					<div class="filter-tallas">
+						<input type="button" value="2" />
+						<input type="button" value="2.5" />
+						<input type="button" value="3" />
+						<input type="button" value="3.5" />
+						<input type="button" value="4" />
+						<input type="button" value="4.5" />
+						<input type="button" value="5" />
+						<input type="button" value="5.5" />
+						<input type="button" value="6" />
+						<input type="button" value="6.5" />
+						<input type="button" value="7" />
+						<input type="button" value="7.5" />
+						<input type="button" value="8" />
+						<input type="button" value="8.5" />
+						<input type="button" value="9" />
+						<input type="button" value="9.5" />
+						<input type="button" value="10" />
+						<input type="button" value="10.5" />
+						<input type="button" value="11" />
+						<input type="button" value="11.5" />
+						<input type="button" value="12" />
+					</div>
+					<div class="filter-category">
+						<input type="url"/>
+						
+					</div>
+					<div class="filter-brand">
+					</div>
+					<div class="filter-color">
+						<h2>Color</h2>
+						<input type="checkbox" id="Color-black" name="Color-Black" value="white"/>
+						<input type="checkbox" id="Color-white" name="Color-white" value="white"/>
+						<input type="checkbox" id="color-blue" name="color-blue" value="blue" >
+						<input type="checkbox" id="color-red" name="color-red" value="red"/>
+						<input type="checkbox" id="color-gray" name="color-gray" value="gray"/>
+						<input type="checkbox" id="color-orange" name="color-orange" value="orange"/>
+					</div>
+				</div>
+			</form>
 		</div>
-		<div class="filters">
-		
-		</div>
-	</nav>
+	</nav>-->
 	<section id="body-sneakers">
     	<div class="contenedor-sneakers">	
+    		<h2 class="title">Comprar Ahora</h2>
 			<div class="body-sneakers">
 				<a href="1.html">
 				<div class="sneakers">
@@ -254,7 +304,7 @@ font-family: 'Lato', sans-serif;-->
 				<a href="1.html">
 				<div class="sneakers">
 					<figure>
-						<img src="imagenes/jordan-retro-8.jpg" alt="air jordan"/>
+						<img src="imagenes/jordan-retro-8.png" alt="air jordan"/>
 					</figure>
 					<div>
 						<h2 class="sneakers-name">AIR JORDAN 11 RETRO 'SPACE JAM' 2016</h2>
@@ -341,7 +391,7 @@ font-family: 'Lato', sans-serif;-->
 	</div>
 	<div class="conteiner-oferts">
 		<div class="oferts">
-			<h1>Liquidación, Ofertas y Descuentos de temportada.</h1>
+			<h1>Liquidación, Ofertas y Descuentos de temporada.</h1>
 			<a href="oferst.html"><button class="button">Click Aquí</button></a>
 		</div>
 	</div>
@@ -368,10 +418,10 @@ font-family: 'Lato', sans-serif;-->
 		<div class="contact">
 			<h2>Contáctanos</h2>
 			<ol>
-				<li>Telf. Fijo: 01 550-3471</li>
-				<li>Telf. Móvil: 970780395 / 984545737</li>
-				<li>WhatsApp: 970780395</li>
-				<li>Email: ventas@zapinst.com</li>
+				<li><span class="icon-phone"></span>Telf. Fijo: 01 550-3471</li>
+				<li><span class="icon-mobile"></span>Telf. Móvil: 970780395 /                              984545737</li>
+				<li><span class="icon-whatsapp"></span>WhatsApp: 970780395</li>
+				<li><span class="icon-email"></span>Email: ventas@zapinst.com</li>
 			</ol>
 		</div>
 		<div class="social-media">
@@ -395,7 +445,6 @@ font-family: 'Lato', sans-serif;-->
 			<h2><a href="delivery.html">Delivery</a></h2>
 		</div>
 	</footer>
-	
 	
 	<script>
 		var buscadorOn = document.getElementById("buscar");
@@ -447,7 +496,6 @@ font-family: 'Lato', sans-serif;-->
 		}
 		
 	</script>
-	
 	
 </body>
 </html>

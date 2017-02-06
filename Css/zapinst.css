@@ -2,12 +2,12 @@
 /* CSS Document */
 /*iconos*/
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?pkcf0d');
-  src:  url('../fonts/icomoon.eot?pkcf0d#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?pkcf0d') format('truetype'),
-    url('../fonts/icomoon.woff?pkcf0d') format('woff'),
-    url('../fonts/icomoon.svg?pkcf0d#icomoon') format('svg');
+ font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?aoaim3');
+  src:  url('../fonts/icomoon.eot?aoaim3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?aoaim3') format('truetype'),
+    url('../fonts/icomoon.woff?aoaim3') format('woff'),
+    url('../fonts/icomoon.svg?aoaim3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -57,6 +57,15 @@
 }
 .icon-close:before {
   content: "\ea0d";
+}
+.icon-email:before {
+  content: "\e945";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
 }
 /*iconos*/
 
@@ -126,6 +135,7 @@ body
 	text-decoration: none;
 	color: black;
 	font-size: 13px;
+	display: block;
 }
 
 .header-left h1:hover, .header-left ol li:hover
@@ -174,7 +184,7 @@ body
 {
 	list-style:none;
 	display: flex;
-	justify-content: flex-end;
+	justify-content:space-around;
 	align-items: center;
 	text-transform: uppercase;
 	font-weight:600;
@@ -186,6 +196,7 @@ body
 {
 	font-size: 12px;
 	margin-left: 10px;
+	text-align: center;
 }
 
 .usuarios a
@@ -224,7 +235,7 @@ body
 	height: 100%;
 	z-index: 2;
 	position: fixed;
-	top:-120%;
+	top:-200%;
 	left:0px;
 	right: 0px;
 	transition:linear .3s;
@@ -349,7 +360,6 @@ input:focus
 	margin: auto;
 	background: rgba(194,194,194,0.7);		
 	text-align: center;
-	border: 1px solid gray;
 }
 
 .unete
@@ -449,7 +459,7 @@ h2.title-unete
 	height: 110px;
 	border-radius: 40px;
 }
-	/*users*/
+/*users*/
 
 /*header*/
 
@@ -520,6 +530,7 @@ h2.title-unete
 }
 
 /*banner*/
+
 /*description*/
 .contenedor-description
 {
@@ -618,14 +629,14 @@ h2.title-unete
 .brand
 {
 	height: auto;
-	max-width: 140px;;
+	max-width: 125px;
 	padding: 0px;
 	margin: 20px;
 }
 
 .brand img
 {
-	max-width: 140px;
+	max-width: 125px;
 	height: auto;
 }	
 /*description*/
@@ -633,6 +644,7 @@ h2.title-unete
 /*nav = filters*/
 #filters
 {
+	border: 1px solid
 }
 
 .contenedor-filters
@@ -641,15 +653,17 @@ h2.title-unete
 	margin: 0px auto;
 	text-align: center;
 	padding: 0px;
-	position: relative;
-	display: flex;
-	justify-content: center;
 }
 
 .contenedor-filters button
 {
 }
 
+.input-color
+{
+	border-radius: 100%;
+	background: green;
+}
 /*nav = filters*/
 
 /*body-sneakers*/
@@ -666,10 +680,21 @@ h2.title-unete
 	margin: auto;
 }
 
+.title
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 18px;
+	text-align: center;
+	padding: 30px;
+	border-bottom: 0.5px solid lightgray;
+}
+
 .body-sneakers
 {
 	width: 1000px;
-	padding: 70px 0px 50px 0px;
+	padding-bottom:50px;
 	display: flex;
 	justify-content:space-around;
 	align-items:center;
@@ -685,7 +710,7 @@ h2.title-unete
 	text-decoration: none;
 	color: black;
 	padding: 0px;
-	width: 33%;
+	width: 32%;
 }
 
 .sneakers
@@ -741,8 +766,10 @@ h2.title-unete
 	font-size: 15px;
 	position: absolute;
 	bottom:-50px;
+	left: 0px;
+	width: 100%;
 	letter-spacing: 1.5px;
-	width: 80%;
+	text-align: center;
 }
 
 .sneakers-price
@@ -751,7 +778,6 @@ h2.title-unete
 	font-size: 14px;
 	margin: 20px 0px;
 }
-
 /*body-sneakers*/
 
 /*value-proposition*/
@@ -764,6 +790,7 @@ h2.title-unete
 	flex-wrap:wrap;
 	height: auto;
 	padding: 30px 0px;
+	border-bottom: 1px solid black;
 }
 
 .proposition
@@ -771,6 +798,7 @@ h2.title-unete
 	width: 155px;
 	border: 1px solid lightgray;
 	padding: 10px;
+	margin: 10px 0px;
 	text-align: center;
 	border-radius: 5px;
 }
@@ -875,6 +903,12 @@ h2.title-unete
 	text-transform: uppercase;
 	font-size: 20px;
 	letter-spacing: 2px;
+	text-align: center;
+}
+
+.oferts a
+{
+	display: block;
 }
 
 .oferts button
@@ -888,7 +922,6 @@ h2.title-unete
 	background: #3DD7D5;
 	color: white;
 }
-
 /*oferts*/
 
 /*contact*/
@@ -942,6 +975,13 @@ h2.title-unete
 	border-left: 0.5px solid lightgray;
 }
 
+.icon-mobile, .icon-whatsapp, .icon-email, .icon-phone
+{
+	margin-right: 5px ;
+	font-weight: bold;
+	font-size: 15px;
+}
+
 .social-redes
 {
 	display: flex;
@@ -954,11 +994,10 @@ h2.title-unete
 
 .social-redes li img
 {
-	width: 40px;
-	padding-left: 10px;
+	width: 30px;
+	padding: 10px;
 	margin: 0px;
 }
-
 /*contact*/
 
 /*footer*/
@@ -970,15 +1009,16 @@ h2.title-unete
 .footer
 {
 	padding: 20px 0px;
-	width: 900px;
+	width: 1000px;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .footer h2
 {
-	margin: 0px 0px 10px 0px;
+	margin: 0px 20px 10px 0px;
 }
 
 .footer h2 a
@@ -998,124 +1038,419 @@ h2.title-unete
 }
 /*footer*/
 
-@media screen and (max-width:940px)
+@media screen and (max-width:1040px)
 {
-	.contenedor-unete
-	{
-		width: auto;	
-	}
-	
-	.footer
-	{
-		width: auto;
-	}
-	
-	.contenedor-sneakers, .body-sneakers, .sneakers
-	{
-		width: auto;
-		height: auto;
-	}
+	/*header*/
 	.contenido
 	{
 		width: auto;
 		padding: 10px;
 	}
 	
-	/*banner*/
+	/*users*/
+	.contenedor-unete
+	{
+		width: auto;
+		margin: 0px 10px;
+	}
+	/*users*/
+	/*header*/
 	
-	.conteiner-banner
+	/*banner*/
+	.banner, .controles
 	{
 		width: auto;
 		padding: 0px 10px;
 	}
 	
-	.banner
-	{
-		width: auto;
-	}
-
 	.list-banner
 	{
 		width: auto;
 	}
-
-	.controles
+	/*banner*/
+	
+	/*description*/
+	.contenedor-description
 	{
 		width: auto;
-		padding:0px 10px;
+		margin: 20px 10px;
 	}
-	/**/
-}
+	
+	.brand, .brand img
+	{
+		max-width: 110px;
+		height: auto
+	}
 
-@media screen and (max-width:810px)
-{
+	.logotipo-title-description
+	{
+		width: 60px;
+		height: 60px;
+	}
+
+	.title-description h1
+	{
+		font-size: 23px;
+	}
+
+	.contenedor-description h2
+	{
+		font-size: 15px;
+	}
+
+	.contenedor-description p
+	{
+		font-size: 13px;
+	}
+
+	.description-brand h2
+	{
+		font-size: 17px;
+		width: 210px;
+		border-bottom: 2.8px solid black;
+	}
+	/*description*/
+	
+	/*tutorials*/
+	#contenedor-tutorials
+	{
+		width: auto;
+		margin: auto 10px;
+		align-items:flex-end;
+	}
+	
+	.tutorials h1
+	{
+		font-size: 13.5px;
+	}
+	/*tutorials*/
+	
+	/*body-sneakers*/
+	.contenedor-sneakers, .body-sneakers
+	{
+		width: auto;	
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
 	.sneakers
 	{
 		height: 340px;
+
 	}
+	/*body-sneakers*/
+	
+	/*value-proposition*/
+	.value-proposition
+	{
+		width: auto;
+		margin: auto 10px;
+	}
+	
+	.proposition
+	{
+		width: 150px;
+	}
+	
+	.proposition:hover span
+	{
+		font-size: 25px;
+	}
+
+	.icon-home, .icon-price, .icon-price-seller, .icon-clock, .icon-truck
+	{
+		font-size: 22px;
+	}
+	
+	.proposition h1
+	{
+		font-size: 14px;
+	}
+
+	.proposition p
+	{
+		font-size: 12.5px;
+	}
+	/*value-proposition*/
+	
+	/*oferts*/
+	.oferts
+	{
+		width: auto;
+		margin: 0 10px;
+	}
+
+	.oferts h1
+	{
+		font-size: 19px;
+	}
+	/*oferts*/
+
+	/*contact*/
+	.conteiner-contact
+	{
+		width: auto;
+		margin: 10px;
+	}
+
+	.conteiner-contact h2
+	{
+		font-size: 16px;
+	}
+
+	.conteiner-contact li a, .conteiner-contact li
+	{
+		font-size: 13px;
+	}
+	/*contact*/
+
+	/*footer*/
+	.footer
+	{
+		width: auto;
+		margin: auto 10px;
+	}
+
+	.footer h2 a
+	{
+		font-size: 11px;
+	}
+	/*footer*/
 }
 
-@media screen and (max-width:500px)
+@media screen and (max-width:850px)
 {
+	/*description*/
+	.brand, .brand img
+	{
+		max-width: 95px;
+	}
+
+	.logotipo-title-description
+	{
+		width: 55px;
+		height: 55px;
+	}
+
+	.title-description h1
+	{
+		font-size: 22px;
+	}
+
+	.contenedor-description h2
+	{
+		font-size: 14px;
+	}
+
+	.contenedor-description p
+	{
+		font-size: 12px;
+	}
+
+	.description-brand h2
+	{
+		font-size: 16px;
+		width: 200px;
+		border-bottom: 2.3px solid black;
+	}
+	/*description*/
 	
+	/*tutorials*/
+	#contenedor-tutorials
+	{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.tutorials h1
+	{
+		font-size: 12.5px;
+	}
+	/*tutorials*/
+	
+	/*body-sneakers*/
+	.title
+	{
+		font-size: 17px;
+	}
+	
+	.body-sneakers a
+	{
+		width: 31%;
+	}
+
+	.sneakers
+	{
+		height: 310px;
+
+	}
+
+	.sneakers img
+	{
+		width: 65%;
+	}
+
+	.sneakers-name
+	{
+		font-size: 11.5px;
+		padding: 15px 25px;
+	}
+
+	.sneakers-tallas, .sneakers-price
+	{
+		font-size: 13px;
+	}
+	/*body sneakers*/
+	
+	/*value-proposition*/
+	.proposition
+	{
+		width: 140px;
+	}
+	
+	.proposition:hover span
+	{
+		font-size: 23px;
+	}
+
+	.icon-home, .icon-price, .icon-price-seller, .icon-clock, .icon-truck
+	{
+		font-size: 20.5px;
+	}
+	
+	.proposition h1
+	{
+		font-size: 13px;
+	}
+
+	.proposition p
+	{
+		font-size: 12px;
+	}
+	/*value-proposition*/
+	
+	/*users*/
+	.users-cuadros h2
+	{
+		font-size: 13px;
+	}
+	
+	.unete h3
+	{
+		font-size: 12px;
+	}
+
+	.user-buyer, .user-wholesaler, .user-seller
+	{
+		width: 28.5%;
+	}
+
+	.unete figure
+	{
+		width: 165px;
+		height: 165px;
+	}
+
+	.user-buyer img, .user-wholesaler img
+	{
+		width: 90px;
+		height: 90px;
+	}
+
+	.user-seller img
+	{
+		width: 160px;
+		height: 100px;
+	}
+	
+	.user-buyer button, .user-wholesaler button, .user-seller button
+	{
+		width: 180px;
+		font-size: 10px;
+	}
+	/*users*/
+	
+	/*oferts*/
+	.oferts
+	{
+		margin: 0 10px;
+	}
+
+	.oferts h1
+	{
+		font-size: 16px;
+	}
+	/*oferts*/
+
+	/*contact*/
+	.conteiner-contact h2
+	{
+		font-size: 15px;
+	}
+
+	.conteiner-contact li a, .conteiner-contact li
+	{
+		font-size: 12px;
+	}
+	
+	.icon-mobile, .icon-whatsapp, .icon-email, .icon-phone
+	{
+		font-size: 13px;
+	}
+	/*contact*/
+
+	/*footer*/
+	.footer h2 a
+	{
+		font-size: 10.5px;
+	}
+	/*footer*/	
+}
+
+@media screen and (max-width:650px)
+{
+	/*header*/
+	.logotipo, .logotipo img
+	{
+		width: 70px;
+		height: 70px;
+	}
+	
+	.header-left h1 a, .header-left h2
+	{
+		font-size: 12px;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	.header-left h2:hover
+	{
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	
+	.usuarios li
+	{
+		font-size: 12px;
+	}
+	
+	.redes
+	{
+		margin-top: 20px;
+	}
+	
+	.redes li img
+	{
+		width: 27.5px;
+	}
 	/*header*/
 	
-	.header
-	{
-		border-bottom: 2px solid;
-	}
-	
-	.header h1
-	{
-		margin:0px 0px 0px 10px;
-		font-weight: 600;
-		font-size: 10px;
-	}
-	
-	.header-left h1 a
-	{
-		font-size: 10px;
-	}
+	/*search*/
 	#logo-search, #buscar, #quitar
 	{
 		display:inherit;
 	}
 	
-	.logotipo
-	{
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-	}
-	
-	.logotipo img
-	{
-		width: 50px;
-		height: 50px;
-		margin:0px;
-	}	
-	
-	.usuarios li
-	{
-		font-size: 10px;
-		margin-left: 10px;
-	}
-
-	.redes
-	{
-		display: flex;
-		justify-content: flex-end;
-		margin-top: 20px;
-	}
-
-	.redes li img
-	{
-		width: 25px;
-	}
-	
-	/*header*/
-	
-	/*search*/
 	.search
 	{
 		width: auto;
@@ -1161,7 +1496,7 @@ h2.title-unete
 		font-size: 0em;
 		padding: 0px;
 		margin: 0px;
-		background: url(../Imágenes/search.png);
+		background: url( ../imagenes/search.png);
 		background-size: cover;
 		border: none;
 		cursor: pointer;
@@ -1174,19 +1509,19 @@ h2.title-unete
 		width: auto;
 	}
 	/*login*/
-
+	
 	/*users*/
 	.contenedor-unete
 	{
+		max-width: 660px;
 		width: auto;
 		position: absolute;
 		top:0px;
-		left:0px;
-		right: 0px;
-		z-index: -4;
+		left:-300%;;
+		right:0px;
 		padding: 15px;
-		opacity: 0;
 		transition: .2s;
+		margin: 0px;
 	}
 	
 	.unete
@@ -1197,8 +1532,7 @@ h2.title-unete
 	
 	.activar-unete
 	{
-		opacity: 1;
-		z-index: 3;
+		left: 0px;
 	}
 	
 	span.close-login
@@ -1248,31 +1582,190 @@ h2.title-unete
 	}
 	/*users*/
 	
-	/*sneakers-body*/
+	/*description*/
+	.brand, .brand img
+	{
+		max-width: 80px;
+	}
+	
+	.brand
+	{
+		margin: 10px;
+	}
+
+	.title-description h1
+	{
+		font-size: 21px;
+	}
+
+	.contenedor-description h2
+	{
+		font-size: 13px;
+	}
+
+	.contenedor-description p
+	{
+		font-size: 11.5px;
+	}
+
+	.description-brand h2
+	{
+		font-size: 14px;
+		width: 175px;
+		border-bottom: 2.3px solid black;
+	}
+	/*description*/
+	
+	/*body-sneakers*/
+	.title
+	{
+		font-size: 16px;
+	}
+	
+	.body-sneakers a
+	{
+		width: 31%;
+	}
+
+	.sneakers
+	{
+		height: 260px;
+		padding: 20px;
+	}
+
+	.sneakers img
+	{
+		width: 60%;
+	}
+
 	.sneakers-name
 	{
 		font-size: 10px;
-		letter-spacing: 2px;
-		margin-bottom:40px;
+		padding: 15px 25px;
+	}
 
+	.sneakers-tallas, .sneakers-price
+	{
+		font-size: 12px;
+	}
+	/*body sneakers*/
+	
+	/*value-proposition*/
+	.value-proposition
+	{
+		border-bottom: none;
 	}
 	
-	.senakers img
+	.proposition:hover span
 	{
-		max-width: 100%;
-		max-height: 100%;
+		font-size: 20px;
 	}
-	
-	.sneakers-tallas
+
+	.icon-home, .icon-price, .icon-price-seller, .icon-clock, .icon-truck
 	{
-		font-weight: 100;
+		font-size: 18px;
+	}
+	/*value-proposition*/
+	
+	/*oferts*/
+	.oferts h1
+	{
 		font-size: 13px;
-		width: 110px;
-		position: absolute;
-		bottom:-50px;
-		letter-spacing: 1.5px;
 	}
-	/*sneakers-body*/
+	/*oferts*/
+	
+	/*contact*/
+	.conteiner-contact
+	{
+		flex-wrap: wrap;	
+	}
+	
+	.zapinst, .customer-support, .contact, .social-media
+	{
+		width: 190px;
+		border-left: 0.5px solid lightgray;
+		border-collapse: collapse;
+	}
+	.conteiner-contact h2
+	{
+		font-size: 14px;
+	}
+
+	.icon-mobile, .icon-whatsapp, .icon-email, .icon-phone
+	{
+		font-size: 12px;
+	}
+	/*contact*/
+}
+
+@media screen and (max-width:500px)
+{
+	
+	/*header*/
+	.header-left h1 a, .usuarios li, .header-left h2
+	{
+		font-size: 11px;
+		margin: 0px 3px;
+	}
+	
+	.logotipo, .logotipo img
+	{
+		width: 60px;
+		height: 60px;
+	}
+
+	.redes li img
+	{
+		width: 25px;
+	}
+	/*header*/
+	
+	/*body-sneakers*/
+	.title
+	{
+		font-size: 16px;
+	}
+	
+	.body-sneakers a
+	{
+		width: 31%;
+	}
+
+	.sneakers
+	{
+		height: 230px;
+		padding: 20px;
+	}
+
+	.sneakers img
+	{
+		width: 60%;
+	}
+
+	.sneakers-name
+	{
+		font-size: 10px;
+		padding: 5px;
+	}
+
+	.sneakers-tallas, .sneakers-price
+	{
+		font-size: 12px;
+	}
+	/*body sneakers*/
+	
+	/*oferts*/
+	.oferts h1
+	{
+		font-size: 11px;
+		margin: 3px;
+	}
+	
+	.oferts button
+	{
+		width: 165px
+	}
+	/*oferts*/
 	
 	/*footer*/
 	.footer
@@ -1282,18 +1775,111 @@ h2.title-unete
 		margin: 0px;
 	}
 	
-	.footer h2
-	{
-		margin: 0px 0px 15px 0px;
-	}
-	
 	.footer h2 a
 	{
 		font-size: 10px;
 		letter-spacing: 2.2px;
 	}
-	/*footer*/
+	/*footer*/	
+}
+
+@media screen and (max-width:370px)
+{
+	/*header*/
+	.header-left h1 a, .usuarios li, .header-left h2
+	{
+		font-size: 10px;
+		margin: 0px 3px;
+	}
 	
+	.logotipo, .logotipo img
+	{
+		width: 50px;
+		height: 50px;
+	}
+
+	.redes li img
+	{
+		width: 22px;
+	}
+	/*header*/
+	
+	/*description*/
+	.brand, .brand img
+	{
+		max-width: 65px;
+	}
+	
+	.title-description h1
+	{
+		font-size: 20px;
+	}
+
+	.contenedor-description h2
+	{
+		font-size: 12px;
+	}
+
+	.contenedor-description p
+	{
+		font-size: 11px;
+	}
+
+	.description-brand h2
+	{
+		font-size: 13px;
+		width: 164px;
+		margin: auto;
+		border-bottom: 2px solid black;
+	}
+	/*description*/
+	
+	/*body-sneakers*/
+	.title
+	{
+		font-size: 15px;
+	}
+	
+	.body-sneakers a
+	{
+		width: 32%;
+	}
+
+	.sneakers
+	{
+		height: 200px;
+		padding: 15px
+	}
+
+	.sneakers img
+	{
+		width: 70%;
+	}
+
+	.sneakers-name
+	{
+		font-size: 9px;
+		padding: 0px;
+	}
+
+	.sneakers-tallas, .sneakers-price
+	{
+		font-size: 9px;
+	}
+	/*body sneakers*/
+	
+	/*oferts*/
+	.oferts h1
+	{
+		font-size: 10px;
+		margin: 3px;
+	}
+	
+	.oferts button
+	{
+		width: 140px
+	}
+	/*oferts*/
 }
 
 
