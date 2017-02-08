@@ -1804,6 +1804,27 @@ h2.title-unete
 	}
 	/*header*/
 	
+	/*login*/
+	.login
+	{
+		margin: 30px auto;
+	}
+	
+	.login h1
+	{
+		font-size: 12.5px;
+	}
+	
+	.login label
+	{
+		font-size: 11px;
+	}
+	.login input
+	{
+		height: 30px
+	}
+	/*login*/
+	
 	/*description*/
 	.brand, .brand img
 	{
